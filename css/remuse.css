@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+html,body{
+	word-spacing: 0px;
+    letter-spacing: .02rem;
+    font-size: 62.5%;
+}
+.position{
+	overflow: hidden;
+	margin: 0;
+	float: right;
+	background-color: #b8bebe;
+	padding-bottom: 20px;
+}
+.position span{
+	font-size:1.6rem;
+}
+.personal{
+	overflow: hidden;
+	margin: 0;;
+	height: 171rem;
+	float: left;
+	background: #606060;
+}
+.personal-pic{
+	width: 120px;
+	height: 120px;
+	margin: 20px auto;
+	padding-top: 30px;
+}
+.personal-pic img{
+	border-radius: 50%;
+}
+.name{
+	margin-top: 40px;
+	color: #fff;	
+	font-size: 1.8rem;
+}
+.age{
+	color: #FFFFff;
+	font-size: 1.4rem;
+	margin-left: 20px;
+}
+.address{
+	text-align: center;
+	color: white;
+	font-size: 1.6rem;
+}
+.college,.tel,.e-mail{
+	text-align: left;
+	color: white;
+	font-size: 1.5rem;
+	
+}
+.address span{
+	margin: 0 22px;
+}
+.e-mail span{
+	line-height: 26px;
+}
+/*.college span,.tel span,.e-mail span{
+	color: #ecebeb;
+}*/
+.contect{
+	width:100%;
+}
+.tag-interest h4,.tag-technology h4{
+	color: white;
+	font-size: 1.6rem;
+}
+.tag-interest li{
+	width: 59px;
+	height: 25px;
+	float: left;
+	margin-right: 26px;
+	margin-top: 10px;
+}
+.tag-technology li{
+	height: 25px;
+	float: left;
+	margin-right: 26px;
+	margin-top: 10px;
+}
+.music{
+	background: url(../img/tag.png) 0 -54px;
+}
+.tarvel{
+	background: url(../img/tag.png) 0 -80px;
+}
+.guitar{
+	background: url(../img/tag.png) 180px -54px;
+}
+.read{
+	background: url(../img/tag.png) 59px -54px;
+}
+.shoot{
+	background: url(../img/tag.png) 120px -54px;
+}
+.htm5{
+	width: 79px;
+	background: url(../img/tag.png) 0 -27px;
+}
+.css3{
+	width:63px;;
+	background: url(../img/tag.png) 84px -27px;
+}
+.jquery{
+	width: 75px;
+	background: url(../img/tag.png) 161px -27px;
+}
+.js{
+	width: 104px;
+	background: url(../img/tag.png) 0px 0px;
+}
+.bootstrap{
+	width: 100px;;
+    background: url(../img/tag.png) 136px 0px;
+	
+}
+.content{
+	margin: 0;
+	padding: 0;
+}
+.column-line{
+	background: #bfbfbf;
+	width: 100%;
+	height: 4px;
+	margin:30px 0;
+	float: right;
+	position: relative;
+}
+.column-name{
+	overflow: hidden;
+	width: 148px;
+	height: 40px;
+	line-height: 40px;;
+	text-align: center;
+	font-size: 2.4rem;
+	background: white;
+	position: absolute;
+	left: 30px;
+	bottom: -26px;
+}
+.panel-info{
+	overflow: hidden;
+}
+.panel-body{
+	font-size: 1.6rem;
+	line-height: 30px;
+	background: #f6f6f6;
+}
+.infor-box{
+	overflow: hidden;
+	background: #F6F6F6;
+	padding:1.6rem;
+	margin-top: 6px;
+}
+.infor-box p{
+	line-height: 30px;;
+}
+.infor-header h4{
+	font-size: 2rem;
+}
+.date{
+	float: right;
+	color: #646464;
+	font-size: 1.4rem;
+	line-height: 26px;
+}
+.infor-body{
+	font-size: 1.6rem;
+	color: #4a4a4a;
+}
+.education{
+	margin-left: 7rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+.technology{
+	overflow: hidden;
+	margin: 0;
+}
+.software{
+	font-size: 1.8rem;
+}
+.a-little{
+	font-size: 1.6rem;
+}
+.product{
+	margin: 20px;
+}
+.media-list{
+	border: 1px white solid;
+	overflow: hidden;
+	margin: 20px;;
+}
+.media-object img{
+	width: 200px;;
+}
+footer{
+	background: #bfbfbf;
+}
+.media-body h4{
+	line-height: 40px;
+	font-size: 2rem;
+}
+.media-body p{
+	font-size: 1.6rem;
+	line-height: 24px;
+	color: #888888;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media (max-width:992px){
+.personal{
+	overflow: hidden;
+	margin: 0;;
+	height: 54rem;
+	float: left;
+	background: #606060;
+}
+@media (max-width:768px){
+	
+}
+@media (max-width:768px){
+	
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[ssssif gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script>
+		function myFunc1(name,dp){
+	    $(".delete").toggle();
+		$(".shade").toggle();
+		$("#add").toggle();
+		$("footer").toggle();
+		$(".glyphicon-remove").toggle();
+		$(".back-2").toggle();
+		}
+	    function de_confirm(){
+
+		if( confirm("确认删除吗?")){
+		alert("已经删除");
+		}
+		else return false;
+		}
+		
+	</script>
+    <style>
+	h1,h2,h3,h4{margin:0; padding:0;}
+	*{ font-size:62.5%;font-family:"微软雅黑"; letter-spacing:.02rem; word-spacing:0px;}
+	input{border:none 0;}
+		
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px; position:relative;}
+	#edit{background: url(images/edit-photo.png) no-repeat center; width:30px; height:88px; float:right; margin-right:3%;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	.back-2{width:19px; height:88px; float:left; margin-left:3%; position:absolute; top:0; left:0; display:none;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	
+	
+	.infor-box{background-color:#f2f2f2;border:#DDDDDD solid 1px; padding:3%; border-bottom:#A6A6A6 solid 2px; position:relative;}
+	
+	.information li{float:left; width:28%;;font-size:20px; color:#656565; }
+	.information ul{height:30px; margin-top:5px;}
+	.infor-box .intent{ padding-top:0px; width:100%; font-size:20px;color:#656565;}
+	.intent .compny{width:100%; color:#323232;}
+	.intent .last-2{ width:50%;padding:0px; float:right; text-align:right;}
+	.intent .first-mid{width:50%;}
+	.intent .first-lat{ width:100%; padding:0; }
+	footer{ z-index:6;  position:fixed; bottom:0;width:100%; max-width:640px; min-width:320px; height:80px; background:linear-gradient(to top, #1385d5, #5dbcff); margin-top:10px;}
+	.add-bot span{font-size:28px; color:white; text-align:center; line-height:80px; }
+	.add-bot{margin:0 auto; width:40%; text-align:center; }
+	section{ margin-bottom:80px;}
+	
+	.glyphicon-remove{ position:absolute; top:6%; right:3%; font-size:20px; color:#D80003; display:none;}
+@media only screen and (max-width:420px) and (min-width:320px){
+	header{height:60px;}
+		#edit{height:60px; background-size:80%}
+		.back{height:60px; background-size:80%}	
+		.save{height:60px; background-size:70%}
+		header h1{font-size:22px; line-height:60px;}
+	.infor-box{ padding:2%;  }
+	.information li{width:10%; font-size:16px; margin-right:0px; line-height:30px;}
+	.information ul{height:20px; margin-top:5px;}
+	
+		footer{height:58px;}
+		.add-bot span{line-height:58px; font-size:20px;}
+        .glyphicon-remove{ font-size:12PX}
+
+    
+	
+	
+
+	
+	
+
+	</style>
+<body>
+<header class="clearfix">   
+      <div id="edit" onClick="myFunc1('delete','block')"></div>         
+     <a href="resume-center.html"> <div class="back"></div> </a>  
+     <a href="job-experience-list.html"> <div class="back-2"></div> </a> 
+     <h1>工作经历</h1>          
+</header>	 
+<section>
+  
+    <div class="infor-box  clearfix">
+    	
+        <div class="information intent">
+        	<ul>
+            	<li class="compny">汕头市建安（集团）公司</li>
+               
+            </ul>
+            <ul>
+            	<li class="first-mid">担任职位：土建工程师 </li>                
+                <li class="last-2">2014-3 至 2015-2</li>
+            </ul>
+            <ul>
+            	<li class="first-lat">工作职责：<br>
+                      负责新浦江镇商业项目土建工程师一职，负责与设计及技术部图纸跟进，
+                      审核指定分包技术标，参与部分工程对外手续办理事宜施工队伍管理及协调。
+                </li>
+            </ul>
+        </div> <span onClick="de_confirm()" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </div>
+    
+   
+    
+     <div class="infor-box  clearfix">
+    	
+        <div class="information intent">
+        	<ul>
+            	<li class="compny">汕头市建安（集团）公司</li>
+               
+            </ul>
+            <ul>
+            	<li class="first-mid">担任职位：土建工程师 </li>                
+                <li class="last-2">2014-3 至 2015-2</li>
+            </ul>
+            <ul>
+            	<li class="first-lat">工作职责：<br>
+                      负责新浦江镇商业项目土建工程师一职，负责与设计及技术部图纸跟进，
+                      审核指定分包技术标，参与部分工程对外手续办理事宜施工队伍管理及协调。
+                </li>
+            </ul>
+        </div> <span onClick="de_confirm()" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </div>
+    
+    
+    
+</section>
+<footer>
+	<div class="add-bot">
+    	<a href="job-experience.html"><span class="glyphicon glyphicon-plus">添加经历</span></a>
+    </div>
+</footer>
+</body>
+</html>

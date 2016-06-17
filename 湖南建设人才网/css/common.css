@@ -1,0 +1,73 @@
+@charset "utf-8";
+*{ margin: 0; padding: 0; font-family:"微软雅黑";}
+a{ text-decoration:none; color:#646464;}
+li{ list-style:none;}
+img{ display:block; border:none 0;}
+input{ border:none 0;}
+.left{ float:left;}
+.right{ float:right;}
+mark{color:#EE8F3D; background:none;}
+a{outline:none;}
+:focus{outline:0;}
+.top-bar{ background-color:#797979; height:30px; font-size:14px;}
+.top-bar-box{width:1000px; margin:0 auto; padding:0 10px; line-height:30px;}
+.top-bar span{ color:#F4F4F4;}
+.top-bar a{color:#F4F4F4; margin:0 8px;}
+.top-bar a:hover{color:#EE8F3D;}
+.top-bar mark:hover{color:#459df5}
+.top-bar .last{ margin-right:0;}
+.top-bar last:a{ margin-right:0;}
+.drop-down{ display:inline-block;width:16px; height:5px; background:url(images/drop-down.png) no-repeat center;}
+.header-box{ width:1000px; margin:0 auto; padding:24px 10px; overflow:hidden;}
+.keywords{ width:300px; height:36px; float:left; padding-left:10px; border:#dfdfdf solid 2px;}
+.search-bot{ cursor:pointer; width:100px; height:40px; background-color: #009af5; border:none 0; font-size:20px; float:left; color:#e9eaeb;}
+.search-hot{font-size:12px; line-height:22px; height:50px; width:412px;}
+.advanced-search{ margin:0 12px; cursor:pointer;}
+.search-hot a{ padding:0 8px;color:#646464;}
+.advanced-search mark:hover{color:#459df5}
+ a:hover{color:#EE8F3D;}
+ .search-bot:hover{ background-color:#119df1}
+.search-hot p :first-child{ padding-left:0;}
+.nav{background:linear-gradient(to top,#459df5,#72B9FF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#459df5), to(#72B9FF));   
+    background: -webkit-linear-gradient(bottom, #459df5, #72B9FF);   
+    background: -moz-linear-gradient(bottom, #459df5, #72B9FF);   
+    background: -o-linear-gradient(bottom, #459df5, #72B9FF);   
+    background: -ms-linear-gradient(bottom, #459df5, #72B9FF); 
+	  filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #459df5, endColorstr = #72B9FF);     
+     }
+.nav-box{ width:1000px; height:40px; margin:0 auto; padding-left:10px;}
+.nav-box li{ float:left; line-height:40px; font-size:16px; padding:0 41px; color:#FFFFFF;}
+.nav-box li:hover{background:linear-gradient(to top,#20568c,#27507a);
+				background: -webkit-gradient(linear, 0 0, 0 100%, from(#20568c), to(#27507a));   
+				background: -webkit-linear-gradient(bottom, #20568c, #27507a);   
+				background: -moz-linear-gradient(bottom, #20568c, #27507a);   
+				background: -o-linear-gradient(bottom, #20568c, #27507a);   
+				background: -ms-linear-gradient(bottom, #20568c, #27507a); 
+				  filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);    
+                   }
+
+.container{ width:1000px; height:100%; margin:0 auto;}
+.column{ padding-top:10px; margin-bottom:10px; overflow:hidden;}
+.column-name{ float:left;width:150px; height:40px; text-align:center; background:#459df5; line-height:40px; color:#FFFFFF;}
+.more{ float:right; color:646464; line-height:40px; padding-right:30px;}
+.line{ width:1000px; height:2px; background-color:#459df5;float:left;}
+.footer{ height:368px; width:100%; background-color:#323232; padding-top:26px; margin-top:20px;}
+.footer-box{ width:1000px; margin:0 auto; padding-bottom:50px; color:#e6e6e6; font-size:14px; line-height:26px;}
+.footer-box dl{ float:left; width:100px; padding-left:75px;}
+.footer-box dt{ font-size:16px; color:#f6a430;}
+.attention-us{ margin-right:86px; text-align:center; font-size:16px; line-height:36px; margin-top:8px;}
+.footer-box p{ float:left; width:100%; text-align:center; font-size:14px; margin-top:30px;}
+.footer-box dd:hover{color:#EE8F3D;cursor:pointer;}
+.tel{font-size:16px; margin-right:36px;}
+.tel span{font-size:30px; color:#f6a430;  vertical-align:middle;}
+.aside{position: fixed;bottom: 35px;right: 40px;z-index: 999; display:none;}
+.aside div{ width:70px; height:70px; margin:20px; border-radius:12px;}
+.qq{background:url(../images/aside.png) no-repeat;}
+.wechat{background:url(../images/aside.png) no-repeat; background-position:0px -84px;}
+.share{background:url(../images/aside.png) no-repeat; background-position:0 -166px;}
+.to-top{background:url(../images/aside.png) no-repeat; background-position:0 -246px;}
+.qq:hover{background: url(../images/aside-1.png)}
+.wechat:hover{background:url(../images/aside-1.png) no-repeat;background-position:0px -84px;}
+.share:hover{background:url(../images/aside-1.png) no-repeat; background-position:0 -166px;}
+.to-top:hover{background:url(../images/aside-1.png) no-repeat; background-position:0 -246px;}

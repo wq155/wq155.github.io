@@ -1,0 +1,157 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[ssssif gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script>
+	   function dropdown(id,dp){
+		   $(".divselect").hide();
+		document.getElementById(id).style.display=dp;  
+	   }
+	   
+	   $(function(){
+		 	$("#divselect li").click(function(){
+			$("#industry").val($(this).text());
+			$("#divselect").hide();
+			 });
+			 
+			 $("#work-type li").click(function(){
+			$("#type-box").val($(this).text());
+			$("#work-type").hide();
+			 });
+			 
+			  $("#state li").click(function(){
+			$("#work-state").val($(this).text());
+			$("#state").hide();
+			 });
+    	})  
+	</script>
+    <link rel="stylesheet" href="css/normalize.css">	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+    </head>
+	<style>
+	h1,h2,h3,h4{margin:0; padding:0;}
+	*{ font-size:62.5%;font-family:"微软雅黑"; letter-spacing:.02rem; word-spacing:0px;}
+	a{color:black;}
+	input{border:none 0;}
+		
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	.save{background:url(images/images/save.png) no-repeat center; width:28px; height:88px; float:right; margin-right:3%;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	.input-group{ margin:3%; height:40px; position:relative;}
+	.input-group-addon{ color:#000000; font-size:1.8rem;}
+	.form-control{height:40px;}
+	.divselect{ display:none; position:absolute;top:40px; left:0; z-index:5; width:100%; background:#606060; border-radius:3px; opacity:0.95;
+	            box-shadow:0px 0 3px}
+	.all{ margin:3%; padding-left:30%}
+	.all li{ color:#FFFFFF; height:30px; font-size:16px;}
+	#industry{ background-color:#FFFFFF;}
+	#type-box{ background-color:#FFFFFF;}
+	#work-state{ background-color:#FFFFFF;}
+	
+	footer{z-index:10; position:inherit; bottom:0px;width:100%; max-width:640px; min-width:320px; height:80px; background:linear-gradient(to top, #1385d5, #5dbcff); margin-top:10px;}
+	.save-bot span{font-size:24px; color:white; text-align:center;background:url(images/images/save.png) no-repeat left;background-size:18%; line-height:80px; padding-left:20%;}
+	.save-bot{margin:0 auto; width:40%; text-align:center;}
+	li:hover{color:#298FE4;}
+	@media only screen and (max-width:420px) and (min-width:320px){
+		header{height:60px;}
+		.back{height:60px; background-size:80%}	
+		.save{height:60px; background-size:80%}
+		header h1{font-size:22px; line-height:60px;}
+		.input-group-addon{ font-size:16px;}
+		footer{height:58px;}
+		.save-bot span{line-height:58px; font-size:20px; background-size:17%}
+	</style>
+
+<body>
+<header class="clearfix">   
+     <div class="save"></div>             
+     <a href="resume-center.html"> <div class="back"></div> </a>   
+     <h1>求职意向</h1>          
+</header>	 
+<section>
+  <div class="input-group">
+  	<span class="input-group-addon" id="basic-addon1">职位意向</span>
+  	<input type="text" class="form-control" placeholder="请输入意向的职位" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+  	<span class="input-group-addon" >行业意向</span>
+  	<input id="industry"  onFocus="dropdown('divselect','block')" type="text" class="form-control"
+     placeholder="请选择意向的行业" readonly aria-describedby="basic-addon1">
+    <div class="divselect" id="divselect">
+                   <ul class="all">
+                       <li>计算机/互联网/通信/电子</li>
+                       <li>会计/金融/银行/保险</li>
+                       <li>毛衣/消费/制造/营运</li>
+                       <li>制药/医疗</li>
+                       <li>广告/媒体</li>
+                       <li>计算机/互联网/通信/电子</li>
+                       <li>会计/金融/银行/保险</li>
+                       <li>毛衣/消费/制造/营运</li>
+                       <li>制药/医疗</li>
+                       <li>广告/媒体</li>
+                   </ul>
+    </div>
+  </div>
+  <div class="input-group">
+  	<span class="input-group-addon">地点意向</span>
+  	<input id="address" onFocus="dropdown('divselect1','block')" type="text" class="form-control" placeholder="请输入意向的城市" aria-describedby="basic-addon1">
+    
+  </div>
+  <div class="input-group">
+  	<span class="input-group-addon" >薪资意向</span>
+  	<input type="text" class="form-control" placeholder="请输入意向的薪资" aria-describedby="basic-addon1">
+     <div class="divselect" >
+    </div>
+  </div>
+  <div class="input-group">
+ 	 <span class="input-group-addon" >职位类型</span>
+ 	 <input id="type-box" onFocus="dropdown('work-type','block')" readonly  type="text" class="form-control" placeholder="请选择职位类型" aria-describedby="basic-addon1">
+      <div class="divselect" id="work-type">
+                   <ul class="all">
+                       <li>全职</li>
+                       <li>兼职</li>
+                       <li>实习生</li>
+                   </ul>
+    </div>
+  </div>
+  <div class="input-group">
+  	<span class="input-group-addon" >求职状态</span>
+ 	 <input id="work-state" readonly  onFocus="dropdown('state','block')" type="text" class="form-control" placeholder="请选择求职状态" aria-describedby="basic-addon1">
+     <div class="divselect" id="state">
+                   <ul class="all">
+                       <li>离职-随时到岗</li>
+                       <li>在职-考虑机会</li>
+                       <li>在职-月内到岗</li>
+                       <li>其他</li>
+                   </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+	<div class="save-bot">
+       <span>确认保存</span>
+    </div>
+</footer>
+</body>
+</html>

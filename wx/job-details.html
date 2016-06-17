@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+<title>job-details</title>
+</head>
+
+<style>
+*{font-family:"微软雅黑";}
+.clearfi{overflow:hidden;}
+/*header*/
+	.header{background-color:#f4b253; height:88px; width:100%; max-width:640px; min-width:320px; }
+	.back{float:left; width:25px; height:88px; margin-left:20px;background:url(images/images/back.png) no-repeat center;  overflow:hidden;}
+	.share{float:right; margin-right:20px; width:36px; height:88px;background:url(images/images/share.png) no-repeat center;  overflow:hidden;}
+	.header h1{ font-family:"微软雅黑"text-align:center; float:left; margin-left:33%; overflow:hidden; color:#313232; font-size:28px; font-weight:600; margin-top:30px; }
+/*详情*/
+	.content-box{background-color:#f2f2f2; width:100%; max-width:640px; min-width:320px; display:block; }
+	.position-box{ padding:3% 3%}
+	.position-box h2{font-size:30px; font-family:"微软雅黑"; color:#066198;float:left; margin:0;}
+	.salary{color:#FE8916;  margin-top:0.5%; float:left; font-size:24px; margin-left:5%}
+	.date{float:right; margin-top:1%; font-size:20px; color:#646464;}
+	.welfare{float:left; font-size:20px; margin-top:1.5%;  color:#313232;}
+	.requirement{display:block;  font-size:20px;color:#646464; margin-top:1.5% }
+	.requirement span{padding-left:26px; margin-left:7%; background-repeat:no-repeat; background-position:left;}	
+	.requirement .experience{ float:left;margin:0px; background-image:url(images/images/experience.png);}
+    .requirement .work-time{float:right; background-image:url(images/images/work-time.png); margin-left:0;background-size:23px; padding-left:30px; margin-right:2px}
+	.requirement .education{background-image:url(images/images/education.png); background-size:28px; padding-left:34px}
+	.address{background-image:url(images/images/location.png)}
+	.requirement .number{background-image:url(images/images/number.png);background-size:24px; padding-left:30px}
+	.line{height:4px; background:url(images/images/line.png) no-repeat center; }
+	.compny-box img{float:left}
+	.compny-box{display:block; padding:3% 3%;}
+	.introduce{ margin-left:3%; float:left;}
+	.introduce span{ font-size:20px; color:#646464; float:left; margin-top:3.5%}
+	.introduce .first{margin-top:0; color:#000000;}
+	.more{ width:24px; height:42px; float:right; margin-top:5.7%; overflow:hidden;background:url(images/images/more.png) no-repeat center; }
+	
+	.job-descriptions{background-color:#f2f2f2; width:100%; max-width:640px; min-width:320px; display:block; margin-top:6px; padding-bottom:70px;}
+	.job-content{display:block; padding:0px 20px; padding-bottom:20px;}
+	.job-descriptions h3{font-size:24px; padding:20px 20px; margin:0;}
+	.job-content span{ font-size:14px; color:#646464}
+	
+	.footer{height:80px; position:absolute; position:fixed; left:0; bottom:0; background-color:#f08623;width:100%; max-width:640px; min-width:320px; overflow:hidden;}
+	.collection{float:left; padding-left:50px; font-size:28px; background:url(images/images/collection-3.png) no-repeat left;  background-size:22%; line-height:80px; font-weight:500; margin-left:13%; overflow:hidden;}
+	.send{float:right; margin-right:13%; padding-left:45px; background:url(images/images/delivery.png) no-repeat left; background-size:19%; line-height:80px; font-weight:500; font-size:28px; overflow:hidden;}
+	.line-2{ background:url(images/images/line-2.png) no-repeat center; height:80px; float:left; width:4px; margin-left:11%}
+	 
+	.collection:hover{color:#FFFFFF; background-image:url(images/images/collection.png)}
+	.send:hover{color:#FFFFFF; background-image:url(images/images/send-2.png)}
+	
+	
+@media only screen and (max-width:380px) and (min-width:320px){
+	/*header*/
+		.header{height:60px;}
+		.back{background-size:14px; height:60px; margin-left:12px;}
+		.share{background-size:21px; height:60px; margin-right:12px;}
+		.header h1{ font-size:18px; margin-top:20px; font-weight:500; margin-left:30%; line-height:18px;}
+	/*详情*/	
+	.position-box h2{font-size:20px;}	
+	.salary{color:#FE8916;  margin-top:0.5%; float:left; font-size:120%;margin-left:3%}
+	.date{float:right; margin-top:0.7%; font-size:14px;}
+	.welfare{float:left; font-size:12px; margin-top:1%; display:block;}	
+	.requirement{font-size:12px;}
+	.requirement span{margin-left:4%; background-size:12px; padding-left:14px; }
+	.requirement .education{ background-size:17px; padding-left:19px;}
+	.requirement .work-time{ background-size:14px; padding-left:16px}
+	.requirement .number{ background-size:14px;padding-left:16px}
+	.compny-box{ padding:12px 12px;}
+	.compny-box img{width:16%; margin-top:2Px;}
+	.introduce{ margin-left:8px;}
+    .introduce span{font-size:12px; margin-top:0;}
+	.more{background-size:90%; margin-top:2.2%;width:16px;}
+	
+	.job-descriptions h3{font-size:16px; padding:12px 12px;}
+	.job-content{padding:0 12px;}
+	.job-content span{font-size:12px;}
+	
+	.footer{height:58px;}
+	.collection{font-size:20px; line-height:58px; padding-left:30px; margin-left:10%}
+	.send{font-size:20px; line-height:58px; padding-left:26px; margin-right:10%}
+	.line-2{background-size:60%; height:58px; margin-left:8.89%}
+	
+	
+	
+	
+	
+	
+}
+
+
+@media only screen and (max-width:520px) and (min-width:380px){
+	/*header*/
+	    .header{height:80px;}
+		.back{background-size:20px; height:80px; margin-left:12px;}
+		.share{background-size:28px; height:80px; margin-right:12px;}
+		.header h1{ font-size:24px; margin-top:28px; font-weight:600; margin-left:31%}
+	/*详情*/	
+	.position-box h2{font-size:25px;}
+	.salary{color:#FE8916;  margin-top:0.5%; float:left; font-size:140%;}
+	.date{float:right; margin-top:0.6%; font-size:14px;}
+	.welfare{float:left; font-size:14px; margin-top:1%; display:block;}	
+	.requirement{font-size:16px;}
+	.requirement span{margin-left:5%; background-size:16px; padding-left:18px;}
+	.requirement .education{ background-size:23px; padding-left:26px;}
+	.requirement .work-time{ background-size:18px}
+	.requirement .number{ background-size:18px;}
+	.compny-box{ padding:12px 12px;}
+	.compny-box img{width:15%; margin-top:2px; margin-left:0;}
+	.introduce{ margin-left:8px;}
+    .introduce span{font-size:14px; margin-top:2%;}
+	.compny-box .more{background-size:90%; margin-top:3.2%;width:16px;}
+	
+	
+	.footer{height:68px;}
+	.collection{font-size:26px; line-height:68px; padding-left:30px; margin-left:10%}
+	.send{font-size:26px; line-height:68px; padding-left:30px; margin-right:10%}
+	.line-2{background-size:60%; height:68px; margin-left:12%}
+	
+	
+}
+</style>
+
+<body>
+<!--header-->
+<div class="header">
+    <a class="back" href="joblist.html"> </a>
+    <h1 >职位详情</h1>
+    <div class="share"></div>
+</div>
+<div class="content-box">
+	<div class="position-box">
+    	<div class="clearfi">
+        	<h2>建筑工程师</h2>
+            <span class="salary">3-5k</span>
+            <span class="date">2016年3月6日</span>
+        </div>
+        <div  class="clearfi">   
+        	<span class="welfare">职位诱惑：五险一金 / 双休 / 节日礼品 / 包吃住</span>    
+        </div>
+        <div class="requirement clearfi">
+            <span class="number">1人</span>
+        	<span class="work-time">全职</span> 
+            <span class="experience">1-3年</span>
+            <span class="address">长沙</span>
+            <span class="education">本科</span>
+           
+                  
+        </div>
+    </div>
+    
+    <div class="line"></div>
+    
+ <div class="compny-box clearfix">
+    	<div class="img-box"><img src="images/images/company-logo.png"></div>
+        <div class="introduce">
+            <span class="first">上海三越软件科技有限公司</span><br>
+            <span>行业：房地产/建筑/建材/工程/500-200人</span><br>
+            <span>工作地址：长沙市岳麓区金洲大道253号</span>       
+        </div>
+        <div class="clearfix more"></div>
+    </div>
+</div>
+
+<div class="job-descriptions">
+	<h3>职位描述</h3>
+    <div class="job-content ">
+    	<span>
+        因公司业务扩张，现特需大量以下岗位人才，欢迎您踊跃加入我们公司，一起努力共同成长，无经验亦可！
+<br><br>
+职位职能:  建筑工程师/应届生亦可
+    <br><br>
+任职资格：<br>
+1、本科及以上学历、工程建筑类专业；<br>
+2、对建筑设计和施工细节熟悉；<br>
+3、熟练使用CAD等设计软件，掌握建筑设计知识，熟悉国内外建筑业的最新技术和规范；<br>
+4、具有时间管理和自我管理能力，具有良好的沟通表达能力，爱岗敬业，认同公司文化；<br>
+5、具有解决复杂问题的能力、独立工作能力、工作推进能力；<br>
+6、良好的团队合作精神及协调能力<br>
+    <br>
+ 本岗位助理工程师欢迎应届生应聘
+    <br><br>
+薪资待遇：<br>
+    待遇从优、5险1金、带薪年假、发展空间广阔！    
+<br>
+           
+    	</span>
+    </div>	
+</div>
+
+<div class="footer">
+	<span class="collection">收藏职位</span>
+    <div class="line-2"> </div>
+    <span class="send">投递简历</span> 
+</div>
+</body>
+</html>

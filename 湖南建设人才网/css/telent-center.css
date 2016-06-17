@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* telent-center Document */
+ #telent-center{background:linear-gradient(to top,#20568c,#27507a);
+				background: -webkit-gradient(linear, 0 0, 0 100%, from(#20568c), to(#27507a));   
+				background: -webkit-linear-gradient(bottom, #20568c, #27507a);   
+				background: -moz-linear-gradient(bottom, #20568c, #27507a);   
+				background: -o-linear-gradient(bottom, #20568c, #27507a);   
+				background: -ms-linear-gradient(bottom, #20568c, #27507a); 
+				  filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);  }
+	.select-place{ float:left; width:98px; position:absolute; z-index:5;}
+	.select-place dd{ display:none; height:30px; width:100px;text-align:center; background-color:#459df5; float:left; margin-right:10px; color:white;}
+	.select-place dd:hover{background:linear-gradient(to top,#20568c,#27507a);
+				background: -webkit-gradient(linear, 0 0, 0 100%, from(#20568c), to(#27507a));   
+				background: -webkit-linear-gradient(bottom, #20568c, #27507a);   
+				background: -moz-linear-gradient(bottom, #20568c, #27507a);   
+				background: -o-linear-gradient(bottom, #20568c, #27507a);   
+				background: -ms-linear-gradient(bottom, #20568c, #27507a); 
+				  filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);  }
+	.select-place dt{ height:36px; width:96px; text-align:center; line-height:36px; border:#dfdfdf solid 2px;}
+	.keywords{ width:478px; margin-left:98px;}
+	.job-search{ width:1000px;  }
+	.search-box{ width:690px; margin:26px auto; position:relative;}
+	.search-hot :first-child{ line-height:36px; margin-right:5px; margin-left:10px;}
+	.search-hot{font-size:12px; line-height:22px; height:50px; width:690px;}
+	.search-hot p{ display:inline-block; line-height:36px;}
+	.advanced-search{ line-height:36px;}
+	.angle-down{
+		width: 0;
+		height: 0;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 7px solid #323232;
+		display:inline-block;
+		vertical-align:middle;
+	    }
+    .select-box{ width:1000px; height:338px; border:#dfdfdf solid 2px; padding:20px 0;  z-index:-1}
+	.select-item-box span{ float:left; width:100px; text-align:center;line-height:36px;}
+	.select-item li{ float:left; padding:0px 20px; margin:3px 0; border-radius:6px; line-height:30px;font-size:14px; cursor:pointer;}
+	.select-item li:hover{ color:#ec9248;}
+	.select-item { width:900px; float:left;}
+	.select-prompt{ float:left; width:1000px; margin:0 auto; background-color:#f1f1f1; height:70px;}
+	.select-prompt>span{ margin:10px 20px; line-height:20px; color:#646464;}
+	.select-prompt .select-item span{ margin:3px; padding:0;}
+	.select-prompt .select-item {width:1000px;}
+	.select-prompt .null{ background:none;}
+	.select-prompt .all-cal{background:none; display:none; margin-right:0; }
+	.select-prompt li{ line-height:20px; margin:0 6px; border:solid #459df5 2px; border-radius:6px; color:#459df5;
+	                   background:url(../images/cancel_03.png) no-repeat 95% 50%;}
+	.select-prompt li:hover{color:#459df5;}
+	.select-item .obj1,.obj2,.obj3,.obj4,.obj5,.obj6,.obj7{background:linear-gradient(to top,#459df5,#72B9FF);border-radius:6px;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #459df5, endColorstr = #72B9FF);color:white;}
+	.column .column-name{ margin-right:2px;}
+	.column-name:hover{ background:linear-gradient(to top,#20568c,#27507a);
+				background: -webkit-gradient(linear, 0 0, 0 100%, from(#20568c), to(#27507a));   
+				background: -webkit-linear-gradient(bottom, #20568c, #27507a);   
+				background: -moz-linear-gradient(bottom, #20568c, #27507a);   
+				background: -o-linear-gradient(bottom, #20568c, #27507a);   
+				background: -ms-linear-gradient(bottom, #20568c, #27507a); 
+				  filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);  }
+	.job-list-box{width:1000px; padding:16px 0; overflow:hidden;}
+	.job-list-item{margin:6px 12px; padding:16px 10px;; border:#f1f1f1 solid 2px;}
+	.job-list-item h1{ font-size:20px; color:#ec9148; font-weight:bold; line-height:30px; cursor:pointer;}
+	.job-list-item h1:hover{color:#FF510E;}
+	.job-list-item input{ float:right; width:100px; height:30px; border-radius:8px; border:#459df5 solid 2px; color:#459df5; background:none; margin-left:30px; cursor:pointer; }
+	.infor{ margin-top:8px;}
+	.infor span{ margin-right:66px; font-size:14px; color:#323232;}
+	.infor: last-child{margin-right:0}
+	.infor em{ font-style:normal; font-size:14px; margin-left:16px;}
+	.site{float:right; color:#646464; line-height:40px; padding-right:30px;font-size:14px;}

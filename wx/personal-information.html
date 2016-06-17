@@ -1,0 +1,191 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[ssssif gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+	<style>
+	h1,h2,h3,h4{margin:0; padding:0;}
+	*{font-family:"微软雅黑"}
+	input{border:none 0;}
+		
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	.save{background:url(images/images/save.png) no-repeat center; width:28px; height:88px; float:right; margin-right:3%;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	
+	.box1{ padding:3% 3%; border-bottom:#e9e9e9 solid 2px;}
+	.more{ background:url(images/more-1.png) no-repeat center; width:23px; height:110px; float:right; position:relative }
+	.box1 span{float:right; margin-right:5%; font-size:20px; line-height:110px; color:#aca9a9;}
+	.img-box{width:27%; height:110px;text-align:center;}
+	.img-box img{border-radius:50%;}
+	
+	.box-2{padding:3% 3%;border-bottom:#e9e9e9 solid 2px; }
+	.box-2 label{ font-weight:normal; width:30%;float:left;font-size:20px; line-height:40px; text-align:center;   padding-right:4%; background:url(images/images/line-between.png) no-repeat right;}
+	.box-2 input{margin-left:4%; height:40px; width:auto; font-size:1.6rem; font-family:"微软雅黑" }
+	.box-2 span{color:#aca9a9; line-height:40px; padding-left:4%;font-size:1.6rem;}
+	.angle{background:url(images/images/angle.png) no-repeat center; width:14px; height:40px; float:right;}
+	.select{background:url(images/more-1.png) no-repeat center; width:20px; height:40px; float:right; position:relative;}
+	
+	.box-brief{padding:3% 3%;border-bottom:#e9e9e9 solid 2px;}
+	.box-brief label{ width:26%; text-align:center;  font-weight:normal;float:left;font-size:20px; line-height:40px;}
+	.box-brief textarea{ height:300px; width:100%; border:#E9E9E9 solid 2px;font-size:1.6rem;}
+	
+	footer{width:100%; max-width:640px; min-width:320px; height:80px; background:linear-gradient(to top, #1385d5, #5dbcff); margin-top:10px;}
+	.save-bot span{font-size:24px; color:white; text-align:center;background:url(images/images/save.png) no-repeat left;background-size:18%; line-height:80px; padding-left:20%;}
+	.save-bot{margin:0 auto; width:40%; text-align:center;}
+	
+	.file{ position:absolute; height:110px; width:23px; opacity:0;}
+	.right{display:inline-block;}
+	
+	input[type="month"]{ background-color:#FFF; width:50%; }
+	
+	@media only screen and (max-width:420px) and (min-width:320px){
+		header{height:60px;}
+		.back{height:60px; background-size:80%}	
+		.save{height:60px; background-size:70%}
+		header h1{font-size:22px; line-height:60px;}
+		
+		.img-box{ height:68px;}
+		.img-box img{width:68px;} 
+		.box1 span{line-height:68px; font-size:18px;}
+		.more{height:68px; background-size:80%}
+		
+		.box-2 label{font-size:18px; background-size:3% 80%; line-height:30px;}
+		.box-2 input{height:30px; font-size:16px}
+		.box-2 span{line-height:30px; font-size:16px}
+		.angle{height:30px;}
+		.select{height:30px; background-size:60%}
+		
+		.box-brief label{font-size:18px; line-height:30px;}
+		.box-brief textarea{height:200px; font-size:16px;}
+		footer{height:58px;}
+		.save-bot span{line-height:58px; font-size:20px; background-size:17%}
+		
+	}
+
+	</style>
+<body>
+<header class="clearfix">   
+     <div class="save"></div>             
+     <a href="resume-center.html"> <div class="back"></div> </a>   
+     <h1>个人信息</h1>          
+</header>	   
+
+<section class="box1">
+	<div class="more">
+		<input class="file" type="file" id="file" name="pic" accept="image/x-png,image/jpg">
+    </div>
+    <span>上传个人头像</span>
+	<div class="img-box"><img src="images/personal-pic.png"></div>
+</section>
+
+<section class="box-2">
+	<label for="name"> 姓名 </label>
+    <input type="text" id="name" placeholder="请输入您的姓名">
+</section>
+	
+<section class="box-2">
+	<label for="native">籍贯</label>
+    <input type="text" id="native" placeholder="请输入您的籍贯地址">
+   
+</section>   
+
+<section class="box-2">
+	<label for="nation">民族</label>
+    <input  id="nation" type="text" placeholder="请输入您的所属民族">
+</section>
+	
+<section class="box-2">
+	<label for="experience">工作经验</label>
+    <input id="experience" type="text" placeholder="请输入您的工作经验">
+</section>
+	
+<section class="box-2">
+	<label for="birth">出生年月</label>
+    <input id="birth"  type="month"   >
+</section>
+	
+<section class="box-2">
+	<label for="education">最高学历</label>
+    <input id="education"  type="text" placeholder="请输入您的学历">
+   <!--<span>
+   		 <div class="right">
+               <div class="mask"></div>
+               <div id="divselecty">
+                   <small>请选择公司规模</small>
+                   <ul class="all">
+                       <li><a href="javascript:;">1-20人</a></li>
+                       <li><a href="javascript:;">20-99人</a></li>
+                       <li><a href="javascript:;"></a></li>
+                       <li><a href="javascript:;">100-499人</a></li>
+                       <li><a href="javascript:;">500-1000人</a></li>
+                       <li><a href="javascript:;">1000人以上</a></li>
+                   </ul>
+               </div>
+               <input name="" type="hidden" value="" id="inputselect"/>
+           </div>
+   </span>-->
+    
+</section>
+	
+<section class="box-2">
+	<label for="location">现居地址</label>
+    <input id="location" type="text" placeholder="请输入您的现居地址">
+</section>
+
+<section class="box-2">
+	<label for="college">毕业院校</label>
+    <input id="college" type="text" placeholder="请输入您的毕业院校">
+</section>
+
+<section class="box-2">
+	<label for="phone">手机号码</label>
+    <input id="phone" type="tel" placeholder="请输入您的手机号码">
+</section>
+
+<section class="box-2">
+	<label for="email">邮箱地址</label>
+    <input id="email" type="email" placeholder="请输入您的邮箱地址">
+</section>
+	
+<section class="box-brief">
+	<label for="brief">个人简介</label>
+    <textarea id="brief" type="text" placeholder="请输入个人简介"></textarea>
+</section>
+
+<footer>
+	<div class="save-bot">
+    	
+        <span>保存信息</span>
+    </div>
+</footer>
+
+</script>
+</body>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

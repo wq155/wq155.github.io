@@ -1,0 +1,378 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+    </head>
+    <script src="js/jquery/jquery.js"></script>
+    <script>
+	    var n;
+		var m=-1;
+		var isDisplay=false;
+		$(function(){
+			$(".list-group li").click(function(){
+				n=$(".list-group li").index(this);
+				$("#list ul").css("visibility","hidden");
+				$("#list ul").eq(n).css("visibility","visible");
+				if(!isDisplay){
+					$("#list").slideToggle();//展开					
+					isDisplay=true;m=n;
+				}else if(m==n){
+					$("#list").slideToggle();//关闭
+					isDisplay=false;
+					m=-1;
+				}else{m=n;}
+				
+				//alert($(".list1").html());
+		
+			});
+			$("#list li").click(function(){
+				$("#list").slideToggle();
+				isDisplay=false;
+			});
+			 $(".footer div").mousemove(function(){
+		  $(".line").hide()});
+		  $(".footer div").mouseleave(function(){
+		  $(".line").show()});
+		  
+	  })
+	</script>
+	
+	 
+	<style>
+	*{font-family:"微软雅黑";}
+	h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+			.header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;  }
+		.menu{background:url(images/menu.png) no-repeat center; height:88px; width:32px; float:left; margin-left:20px;}
+		.search{background:url(images/search.png) no-repeat center; height:88px; width:31px; float:right; margin-right:20px;}
+		.header h1{ font-size:28px; text-align:center; display:block; color:#FFFFFF; line-height:88px;}
+		
+		.content{background-color:#f2f2f2;width:100%; max-width:640px; min-width:320px; height:100%}
+		.indexes{width:100%; max-width:640px; min-width:320px; position:relative; z-index:2}
+		.indexes .list-group{height:40px; background-color:#353535; border-radius:0 0 5px 5px;margin:0 auto; }
+		.indexes .list-group li{color:#FFFFFF; font-size:16px; float:left; line-height:40px; padding-left:12.5%;}
+		.indexes em{background:url(images/triangle.png) no-repeat center; height:40px; width:10px;display:inline-block;float:right; margin-left:12px;}
+		
+		.personal{background-color:#FFFFFF; border-radius:10px;margin-top:6px;}
+		.img-box{width:85px; height:85px; float:left;  border-radius:50%; border:#e3e3e3 solid 1px; margin:14px 20px; }
+		.img-box img{float:left;}
+		.infor{ margin-top:28px; margin-right:75px;margin-left:120px;}
+		
+		.top h2{  font-size:24px; width:32%;color:#000000;  float:left;   margin:0}
+		.infor span{ font-size:18px; color:#656565; float:left; width:20%; }
+		.infor .addr{float:right;text-align:right; }
+		.top{height:32px;}
+		.age{margin-left:8px; font-size:18px; color:#656565;}
+		.edu{margin-left:10%;text-align:center;}
+		.bot{margin-top:12px;}
+		.infor .job{width:32%}
+		.infor .work-tp{float:right; text-align:right;}
+		.exp{ margin-left:10%; text-align:center;}
+		.more{float:right; background:url(images/more-1.png) no-repeat center; width:23px; height:116px; margin-right:20px; }
+		
+		.footer{ background-color:#23a4ff;width:100%; max-width:640px; min-width:320px; height:80px; border-top:#CCCCCC solid 1px;margin-top:10px; position:relative }
+		.up{font-size:28px; width:50%; text-align:center;  line-height:80px;}
+		.down{font-size:28px; width:50%; text-align:center;  line-height:80px; float:right;}
+		.line{background:url(images/line-2.png) no-repeat center; width:4px; height:50px; position:absolute; left:50%; top:15px; margin-left:-2px;}
+		
+		section{width:100%;  background-color:#353535; opacity:0.9; padding-top:15px; position:absolute; top:30px; display:none; z-index:1;}
+		section ul{ float:left; padding-left:12.5%; padding-right:10px; COLOR:#fff}
+		
+		.indexes section li:hover{color:#E3A900;}
+		.footer div:hover{background-color:#004377; color:#FFFFFF; }
+		@media only screen and (max-width:450px) and (min-width:320px){
+			.header{ height:60px;}
+			.header h1{font-size:18px; line-height:60px;}
+			.menu{background-size:70%; height:60px; margin-left:12px;}
+			.search{background-size:65%; height:60px; margin-right:12px;}
+			
+			.indexes .list-group{ height:25px;}
+			.indexes .list-group li{font-size:14px; line-height:25px; padding-left:12%;}
+			.indexes em{background-size:60%; height:25px; margin-left:6px;}
+			
+			.personal{margin-top:3px;}
+			.img-box{ width:50px; height:50px; margin:8px 12px;}
+			.img-box img{width:50px;}
+			.infor{margin-top:14px; margin-right:40px; margin-left:60px;}
+			.top h2{font-size:16px;}
+			.top{height:22px;}
+		    .infor span{font-size:12px;}
+			.age{margin-left:3px;font-size:12px; }
+			.edu{margin-left:18px;}
+			.bot{margin-top:4px;}
+			.exp{margin-left:18px;}
+			
+			.more{background-size:45%; height:68px; margin-right:12px;} 
+			
+			.footer{height:50px;}
+			.up{font-size:16px; line-height:50px}
+			.down{font-size:16px;line-height:50px}
+			.line{top:0; background-size:70%}
+			
+			section{top:17px; font-size:12px;}
+			section ul{padding-left:11.5%;}
+		}
+	</style>
+<body>
+	<div class="header clearfix">
+        <div class="search"></div>
+    	<div class="menu"></div>
+        <h1>人才列表</h1>
+    </div>
+    
+    <div class="content">
+    	<div class="indexes">
+        	<ul class="list-group">
+            	<li>学历<em> </em></li>
+                <li>经验<em> </em></li>
+                <li>类型<em> </em></li>
+                <li>地点<em> </em>  </li>             
+            </ul>
+            
+       
+        <section class="clearfix" id="list">
+    	<ul class="list1">
+        	<li>本科</li>
+            <li>研究生</li>
+            <li>博士</li>
+            <li>教授</li>
+            <li>其他</li>
+            
+        </ul>
+        <ul>
+        	<li>5年以上</li>
+            <li>3-5年</li>
+            <li>1-3年</li>
+            <li>应届生</li>
+            <li>其他</li>
+            
+        </ul>
+        <ul>
+        	<li>全职</li>
+            <li>兼职</li>
+            <li>实习生</li>
+        </ul>
+        <ul>
+        	<li>湖南</li>
+            <li>湖北</li>
+            <li>上海</li>
+            <li>北京</li>
+            <li>广州</li>
+            <li>其他</li>
+        </ul>
+    </section>
+     </div>
+        <div class="personal clearfix">
+           <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="personal clearfix">
+            <a href="resume.html"> <div class="more"> </div></a>
+        	<div class="img-box"><img src="images/photo.png"></div>
+            <div class="infor" >
+            	<div class="top">
+                  <span class="addr" >湖南长沙</span>
+                  <h2>张某某<em class="age">27岁</em></h2>
+                  <span class="edu" >本科</span>
+                </div>         
+                <div class="bot">
+                 <span class="work-tp">全职</span>
+                    <span class="job">建筑工程师</span>
+                    <span class="exp">三年经验</span>
+                   
+                </div>
+            </div>
+            
+        </div>
+        
+    <div class="footer">
+         <div class="down">下一页</div>
+        <div class="up">上一页</div>
+       
+        <em class="line"></em>
+    </div>
+    </div>
+    
+</body>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*company-cneter */
+.user-center{background:linear-gradient(to top,#20568c,#27507a);filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);}
+	.user-infom-box{ margin-top:20px; margin-bottom:20px; width:1000px;}
+	.infor-box{ border:solid 2px #bfbfbf; width:444px; height:360px; padding:26px; float:left;}
+	.infor-box .edit{ float:right; color:#eb8d3e; font-size:14px;line-height:50px;}
+	.infor-box h1{ font-size:28px; line-height:50px; margin-bottom:10px;}
+	.infor-box h2{ font-size:24px; line-height:50px;}
+	.infor-box>span{ margin-left:40px; line-height:50px;}
+	.infor-box p{ line-height:40px; font-size:20px; margin-bottom:16px;}
+	.hint-infom{ margin-top:20px;}
+	.hint-infom span{ float:left; width:146px; border-right:2px solid #459df5; font-size:20px; text-align:center; line-height:30px;}
+	.hint-infom :last-child{ border:none;}
+	.resume-infom{ border:solid 2px #bfbfbf; border-left:none; width:444px; height:360px; padding:26px; background-color:#e9f4ff;  float:left; box-shadow:-2px 0 3px #B0B0B0;}
+	.resume-infom h1{font-size:28px; line-height:50px; margin-bottom:10px;}
+	.resume-infom .revamp{ float:right; color:#eb8d3e; font-size:14px;line-height:50px;}
+	.head-portrait{ border:#d4eaff solid 2px; width:173px; overflow:hidden;}
+	.head-portrait p{ text-align:center; height:30px; font-size:16px; line-height:30px; border:2px solid #d4eaff ;}
+	.position-infom{ float:right; width:214px;}
+	.position-infom h2{font-size:24px; line-height:50px;}
+	.position-infom p{line-height:40px; font-size:20px; margin-bottom:16px;}
+	.operate-box{ overflow:hidden; width:100%;line-height:20px; margin-top:30px;}
+	.operate-box span{ float:left; padding:0 24px; text-align:center; border-right:2px solid #459df5; font-size:16px;}
+	.operate-box :last-child{ border:none;}
+	.personal-infom{ width:942px;height:100px;padding:26px; border:solid 2px #bfbfbf; overflow:hidden; border-top:none;}
+	.personal-infom h3{ font-size:28px; margin-bottom:20px;}
+	.personal-infom .pic-1{ background:url(../images/personage-center-pic1.png) no-repeat left;}
+	.personal-infom .pic-2{ background:url(../images/personage-center-pic2.png) no-repeat left;}
+	.personal-infom .pic-3{ background:url(../images/personage-center-pic3.png) no-repeat left;}
+	.personal-infom .pic-4{ background:url(../images/personage-center-pic4.png) no-repeat left;}
+	.personal-infom div{ float:left; width:180px; padding-left:50px; font-size:20px; line-height:50px; }
+	.column-name:hover{ background:linear-gradient(to top,#20568c,#27507a);}
+	.job-list-box{width:1000px; padding:16px 0; overflow:hidden;}
+	.job-list-item{margin:6px 12px; padding:16px 10px;; border:#f1f1f1 solid 2px;}
+	.job-list-item h1{ font-size:20px; color:#ec9148; font-weight:bold; line-height:30px;cursor:pointer;}
+	.job-list-item h1:hover{color:#FF510E;}
+	.job-list-item input{ cursor:pointer;float:right; width:100px; height:30px; border-radius:8px; border:#459df5 solid 2px; color:#459df5; background:none; margin-left:30px; }
+	.infor{ margin-top:8px;}
+	.infor span{ margin-right:66px; font-size:14px; color:#323232;}
+	.infor: last-child{margin-right:0}
+	.infor em{ font-style:normal; font-size:14px; margin-left:16px;}
+	.site{float:right; color:#646464; line-height:40px; padding-right:30px;font-size:14px;}
+	.job-describtion{ float:left; line-height:40px; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;                      margin-bottom:16px;}
+

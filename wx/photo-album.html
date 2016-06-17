@@ -1,0 +1,144 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[ssssif gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script>
+		function myFunc1(name,dp){
+	    $(".delete").toggle();
+		$(".shade").toggle();
+		$("#add").toggle()
+		$("footer").toggle()
+		
+		}
+	    function de_confirm(){
+
+		if( confirm("确认删除吗?")){
+		alert("已经删除");
+		}
+		else return false;
+		}
+		
+	</script>
+    <style>
+	h1,h2,h3,h4{margin:0; padding:0;}
+	*{ font-size:62.5%;font-family:"微软雅黑"; letter-spacing:.02rem; word-spacing:0px;}
+	input{border:none 0;}
+		
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;}
+	#edit{background: url(images/edit-photo.png) no-repeat center; width:30px; height:88px; float:right; margin-right:3%;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	section>img{width:100%; max-width:640px; min-width:320px;}
+	section{ position:relative;}
+	.camera{ text-align:center;position:absolute; left:50%; top:50%;transform:translate(-50%,-50%); }
+	.photo-container{ height:100%; min-height:520px; max-height:720px; margin:2% 0;} 
+	.photo-box{width:18.75%; height:16.6666%;margin:10px 3.125%;float:left; position:relative;}
+	.photo-box img{ width:100%; box-shadow:3px 3px 8px #373737;}
+	#add{ display:block;}
+	.add-box{width:100%; height:100%;position:absolute; top:0; opacity:0}
+	footer{ z-index:6; display:none; position:fixed; bottom:0;width:100%; max-width:640px; min-width:320px; height:80px; background:linear-gradient(to top, #1385d5, #5dbcff); margin-top:10px;}
+	.add-bot span{font-size:28px; color:white; text-align:center;background:url(images/pic.png) no-repeat left;background-size:24%; line-height:80px; padding-left:22%;}
+	.add-bot{margin:0 auto; width:40%; text-align:center; }
+	.shade{ display:none; width:100%; height:100%; background-color:#000000; opacity:0.3; position:absolute; top:0; left:0; z-index:3;}
+    .delete{ display:none; background:url(images/delete.png) no-repeat center; width:26px; height:30px; background-size:100%;  position:absolute; left:50%; top: 50%;
+	         transform:translate(-50%,-50%); z-index:5;}
+	@media screen and (max-width:420px) and (min-width:320px){
+		header{height:60px;}
+		#edit{height:60px; background-size:80%}
+		.back{height:60px; background-size:80%}	
+		.save{height:60px; background-size:70%}
+		header h1{font-size:22px; line-height:60px;}
+		
+		.camera img{width:70px}
+		.photo-container .photo-box{width:25%; height:15.3846%; margin:4.1666%;}
+		
+		
+		footer{height:58px;}
+		.add-bot span{line-height:58px; font-size:20px; background-size:24%}
+		.delete{ width:21px; height:25px; background-size:100%;}
+	}
+	</style>
+<body>
+<header class="clearfix">   
+      <div id="edit" onClick="myFunc1('delete','block')"></div>         
+     <a href="resume-center.html"> <div class="back"></div> </a>   
+     <h1>个人相册</h1>          
+</header>	 
+<section>
+	 <img  src="images/bj-photo.png">
+     <div class="camera"><a href="#"><img  src="images/camera.png"></a></div>
+</section>
+
+<div class="photo-container">
+	<div class="photo-box">
+    	<img src="images/photo-1.png">
+        <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box">
+    	 <img src="images/photo-2.png">
+         <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box">	
+    	<img src="images/photo-3.png">
+        <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box">
+        <img src="images/photo-4.png">
+        <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box">
+    	<img src="images/photo-4.png">
+        <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box">
+    	<img src="images/photo-4.png">
+        <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box">
+    	<img src="images/photo-4.png">
+        <div class="shade"></div>
+        <div class="delete" onclick="de_confirm()"></div>
+    </div>
+    <div class="photo-box" id="add"><img src="images/add.png"> <input type="file" name="add" class="add-box"></div>
+</div>
+
+<footer>
+	<div class="add-bot">
+    	<a href="photo-album.html"><span>编辑完成</span></a>
+    </div>
+</footer>
+</body>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

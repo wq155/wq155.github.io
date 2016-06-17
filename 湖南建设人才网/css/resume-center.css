@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* resume-center */
+.personal-form,.position-form{ width:497px;; float:left; border:#459df5 solid 2px; padding-bottom:10px; height:460px;}
+	.position-form{ margin-left:-2px;}
+	.personal-form h1,.position-form h1{ font-size:20px; line-height:54px; padding-left:28px; margin-bottom:20px; border-bottom:#459df5 solid 2px;}
+	.resume-infom input[type=text]{ width:200px; height:30px; border:#dfdfdf solid 2px; margin-right:130px; float:right; margin-top:5px;}
+	.resume-infom input[type=radio]{ margin-left:30px;}
+	.personal-form span{ color:red; line-height:30px;}
+	.personal-form label{ line-height:42px; margin-left:30px; color:#646464; font-size:14px;}
+	.personal-form form .name{ width:260px;}
+	.personal-form form .id-card{ margin-left:20px; color:black}
+	.resume-infom{ margin-top:20px;}
+	.work-experience{border:#459df5 solid 2px; padding-bottom:10px; height:440px; width:100%; overflow:hidden;  margin-top:20px; float:left;}
+	.work-experience input{ width:260px; margin-left:10px; height:30px; border:#dfdfdf solid 2px; margin-right:130px;  margin-top:5px;}
+	.work-experience input[type=month]{ width:160px; margin-right:10px;}
+	.work-experience h1{font-size:20px; line-height:54px; padding-left:28px; margin-bottom:20px; border-bottom:#459df5 solid 2px;text-align:center;}
+	.work-experience label{ line-height:42px; margin-left:30px; color:#646464; font-size:14px;}
+	.work-experience .salary{ width:204px;}
+	.work-experience textarea{ width:960px; height:120px; display:block; margin:0 auto;}
+	.work-experience form .add{ width:160px; display:block; margin:20px auto; height:40px; background-color:#459df5; border-radius:6px; border:0 none; font-size:18px; color:white}
+	.education{ height:280px; margin-bottom:30px;}
+	.complete{ height:60px; width:200px;display:block;margin:60px auto; height:50px; background-color:#459df5; border-radius:6px; border:0 none; font-size:18px; color:white}
+    .self-introduce{border:#459df5 solid 2px; padding-bottom:10px; margin-bottom:20px; height:180px; width:996px; overflow:hidden; margin-top:-2px; float:left;}
+    .self-introduce textarea{ width:960px; height:120px; display:block; margin:0 auto;}
+    .self-introduce label{ line-height:42px; margin-left:30px; color:#646464; font-size:14px;}

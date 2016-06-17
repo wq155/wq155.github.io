@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>简历管理</title>
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<link rel='icon' href="images/pic.png" type=‘image/x-ico’ /> 
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" href="css/pagination.css">
+<link rel="stylesheet" href="css/resume-center.css">
+</head>
+
+<body>
+<div class="header">
+ 	<div class="top-bar">
+        <div class="top-bar-box">
+           
+            <div class="top-nav right">
+                <a href="#">收藏本站</a>
+                <a href="#">企业/个人中心<span class="drop-down"> </span></a>
+                <span>个人/企业<a href="#"><mark>登陆</mark></a> |<a href="#" class="last"><mark > 注册</mark></a></span>
+            </div>       
+            <span class="left">欢迎来到建设人才网</span><br>
+        </div>
+    </div>
+    <div class="header-box">
+      
+        <div class="search-box right">
+        	<input class="keywords"  type="text" placeholder="请输入职位名称">
+            <input type="button" value="搜 索" class="search-bot">
+            <div class="search-hot">
+            	<span>热门搜索:</span>
+                <span class="right advanced-search"><mark>高级搜索&gt;&gt;</mark></span>
+                <p><a href="#">建筑工程师</a> |<a href="#">建造师</a> |  <a href="#">建筑设计</a> |  <a href="#">安全员</a> |  <a href="#">项目经理</a> |  <a href="#">施工员</a></p>
+            </div>
+        </div>
+         <div class="logo-box left">
+        	<a href="index.html"><img src="images/logo.png"></a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav-box">
+        <ul>
+            <a href="index.html"><li>首 页 </li></a>
+            <a href="career-center.html"><li>求职中心</li></a>
+            <a href="telent-centent.html"><li>人才中心</li></a>
+            <a href="industry-news.html"><li>行业资讯</li></a>
+            <a href="campus-recuiter.html"><li>校园招聘</li></a>
+            <a href="user-center.html"><li class="user-center">用户中心</li></a>
+            <a href="about-us.html"><li>关于我们</li></a>
+        </ul>
+    </div>
+ </div>
+ <div class="container">
+ 	<div class="resume-infom">
+    	<div class="personal-form">
+        	<h1>个人信息</h1>
+            <form>
+            	<label><span>*</span> 姓名</label><input type="text" class="name"><br>
+                <label><span>*</span> 姓别</label><input type="radio"> 男<input type="radio"> 女<br>
+                <label><span>*</span> 出生日期</label><input type="text"><br>
+                <label><span>*</span> 参加工作年份</label><input type="text"><br>
+                <label><span>*</span> 户口所在地</label><input type="text"><br>
+                <label><span>*</span> 现居城市</label><input type="text"><br>
+                <label><span>*</span> 手机号码</label><input type="text"><br>
+                <label><span>*</span> 电子邮箱</label><input type="text"><br>
+                <label><span>*</span> 证件<span class="id-card">身份证</span></label><input type="text"><br>
+            </form>
+        </div>
+        <div class="position-form personal-form">
+        	<h1>求职意向</h1>
+            <form>
+                <label><span>*</span> 期望工作性质</label><input type="radio"> 全职<input type="radio"> 兼职<input type="radio"> 实习<br>
+                <label><span>*</span> 期望工作地点</label><input type="text"><br>
+                <label><span>*</span> 期望从事行业</label><input type="text"><br>
+                <label><span>*</span> 期望从事岗位</label><input type="text"><br>
+                <label><span>*</span> 期望月薪</label><input type="text"><br>
+                <label><span>*</span> 工作状态</label><input type="text"><br>
+                </form>
+            </div>
+            <div class="self-introduce">
+            <form>
+                <label>个人简介</label>
+                <textarea></textarea>
+            </form>
+        </div>
+        </div>
+        <div class="work-experience">
+        	<h1>最近工作/实习经历</h1>
+            <form>
+                <label>公司名称</label><input type="text">
+                <label>职位名称</label><input type="text"><br>
+                <label>行业类别</label><input type="text">
+                <label>工作时间</label><input type="text"><br>
+                <label>职位月薪（税前）</label><input type="text" class="salary"><br>
+                <label>工作描述</label>
+                <textarea></textarea>
+                <input type="button" value="添加更多" class="add">
+            </form>
+        </div>
+        <div class="work-experience education">
+        	<h1>教育经历</h1>
+            <form>
+                <label>学校名称</label><input type="text">
+                <label>所属专业</label><input type="text"><br>
+                <label>是否统招</label><input type="text">
+                <label>获得学历</label><input type="text"><br>
+                <label>就读时间</label><input type="month" class="salary"> 至 <input type="month" class="salary"><br>
+                <input type="button" value="添加更多" class="add">
+            </form>
+        </div>
+        <input type="button" value="完成我的简历" class="complete">
+ </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+#career-center{background:linear-gradient(to top,#20568c,#27507a);filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);}
+  .site{ float:left; margin-left:30px;color:#333333; line-height:40px;font-size:14px;}
+  .line{ height:4px;}
+  .column{ width:1000px;}
+  .column h1{ font-size:24px; line-height:60px; padding-left:12px;border-bottom:#f1f1f1 2px solid;}
+  .column h1 span{color:#646464; font-size:14px; float:right; padding-right:12px; }
+  .company-infor{ margin:20px 16px; padding-bottom:16px;}
+  .company-infor h2{ color:#ee8f3d; font-size:16px; line-height:40px;}
+  .center{ margin-left:206px;}
+  .job-condition{ border-top:#f1f1f1 2px solid; padding-top:12px; padding-left:12px;}
+  .job-condition span{ display:inline-block; width:260px; line-height:30px;}
+  .job-condition .date-range{ width:400px;}
+  .job-condition .last{ width:180px; text-align:right;}
+  .job-content{ font-size:16px; font-weight:600; line-height:30px; padding-left:12px;}
+  .job-detail p{ line-height:30px; font-size:14px; padding-left:12px; }
+  .contact{ margin-top:10px;}
+  .contact h3{font-size:16px; padding-left:12px; line-height:30px; border-bottom:#f1f1f1 2px solid; }
+  .contact span{ margin:0 12px; line-height:30px; font-size:16px;}
+  .submit{width:268px; height:58px; background-color:#459df5; cursor:pointer; color:white; font-size:24px; margin:20px 366px; }
+  .column h4,.column h6{ width:1000px; text-align:center; font-size:20px; line-height:50px; margin-top:10px;}
+  .column .company-detail p{ border:#bfbfbf solid 2px; padding:20px; font-size:14px; color:#646464; line-height:30px; }
+  .company-detail span{ display:block; font-weight:600; color:black}
+  table{ border:#bfbfbf solid 2px; width:1000px; text-align:center; line-height:30px; font-size:14px;}

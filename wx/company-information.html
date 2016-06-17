@@ -1,0 +1,253 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[ssssif gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script src="js/f.js"></script>
+	<style>
+	h1,h2,h3,h4{margin:0; padding:0;}
+	*{font-family:"微软雅黑"}
+	input{border:none 0;}
+		
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	.save{background:url(images/images/save.png) no-repeat center; width:28px; height:88px; float:right; margin-right:3%;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	
+	.box1{ padding:3% 3%; border-bottom:#e9e9e9 solid 2px;}
+	.more{ background:url(images/more-1.png) no-repeat center; width:23px; height:110px; float:right; position:relative }
+	.box1 span{float:right; margin-right:5%; font-size:20px; line-height:110px; color:#aca9a9;}
+	.img-box{width:110px; height:110px;}
+	.img-box img{border-radius:6px; }
+	
+	.box-2{padding:3% 3%;border-bottom:#e9e9e9 solid 2px; }
+	.box-2 h2{float:left;font-size:20px; line-height:40px;   padding-right:4%; background:url(images/images/line-between.png) no-repeat right;}
+	.box-2 input{margin-left:4%; height:40px; width:auto; font-size:1.6rem; font-family:"微软雅黑" }
+	.box-2 span{color:#aca9a9; line-height:40px; padding-left:4%;font-size:1.6rem;}
+	.angle{background:url(images/images/angle.png) no-repeat center; width:14px; height:40px; float:right;}
+	.select{background:url(images/more-1.png) no-repeat center; width:20px; height:40px; float:right; position:relative;}
+	
+	.box-brief{padding:3% 3%;border-bottom:#e9e9e9 solid 2px;}
+	.box-brief h2{float:left;font-size:20px; line-height:40px;}
+	.box-brief textarea{ height:300px; width:100%; border:#E9E9E9 solid 2px;font-size:1.6rem;}
+	
+	footer{width:100%; max-width:640px; min-width:320px; height:80px; background:linear-gradient(to top, #1385d5, #5dbcff); margin-top:10px;}
+	.save-bot span{font-size:24px; color:white; text-align:center;background:url(images/images/save.png) no-repeat left;background-size:18%; line-height:80px; padding-left:20%;}
+	.save-bot{margin:0 auto; width:40%; text-align:center;}
+	
+	.file{ position:absolute; height:110px; width:23px; opacity:0;}
+	.right{display:inline-block;}
+	
+	@media only screen and (max-width:420px) and (min-width:320px){
+		header{height:60px;}
+		.back{height:60px; background-size:80%}	
+		.save{height:60px; background-size:80%}
+		header h1{font-size:22px; line-height:60px;}
+		
+		.img-box{width:68px; height:68px;}
+		.img-box img{width:100%;} 
+		.box1 span{line-height:68px; font-size:18px;}
+		.more{height:68px; background-size:80%}
+		
+		.box-2 h2{font-size:18px; background-size:3% 80%; line-height:30px;}
+		.box-2 input{height:30px; font-size:16px}
+		.box-2 span{line-height:30px; font-size:16px}
+		.angle{height:30px;}
+		.select{height:30px; background-size:60%}
+		
+		.box-brief h2{font-size:18px; line-height:30px;}
+		.box-brief textarea{height:200px; font-size:16px;}
+		footer{height:58px;}
+		.save-bot span{line-height:58px; font-size:20px; background-size:17%}
+		
+	}
+
+	</style>
+<body>
+<header class="clearfix">   
+     <div class="save"></div>             
+     <a href=""> <div class="back"></div> </a>   
+     <h1>企业信息</h1>          
+</header>	   
+
+<section class="box1">
+	<div class="more">
+		<input class="file" type="file" id="file" name="pic" accept="image/x-png,image/jpg">
+    </div>
+    <span>上传企业头像</span>
+	<div class="img-box"><img src="images/img-company.png"></div>
+</section>
+
+<section class="box-2">
+	<h2>公司名称</h2>
+    <input type="text" placeholder="请输入公司名称">
+</section>
+	
+<section class="box-2">
+	<h2>公司行业</h2>
+    <span>
+          <div class="right">
+               <div class="mask"></div>
+               <div id="divselect">
+                   <small>请选择行业分类</small>
+                   <ul class="all">
+                       <li><a href="javascript:;">计算机/互联网/通信/电子</a></li>
+                       <li><a href="javascript:;">会计/金融/银行/保险</a></li>
+                       <li><a href="javascript:;">毛衣/消费/制造/营运</a></li>
+                       <li><a href="javascript:;">制药/医疗</a></li>
+                       <li><a href="javascript:;">广告/媒体</a></li>
+                       <li><a href="javascript:;">计算机/互联网/通信/电子</a></li>
+                       <li><a href="javascript:;">会计/金融/银行/保险</a></li>
+                       <li><a href="javascript:;">毛衣/消费/制造/营运</a></li>
+                       <li><a href="javascript:;">制药/医疗</a></li>
+                       <li><a href="javascript:;">广告/媒体</a></li>
+                   </ul>
+               </div>
+               <input name="" type="hidden" value="" id="inputselect"/>
+           </div>
+  </span>
+   
+</section>
+
+ 
+           
+      
+          
+	
+<section class="box-2">
+	<h2>公司地址</h2>
+    <input type="text" placeholder="请输入公司地址">
+</section>
+	
+<section class="box-2">
+	<h2>联系电话</h2>
+    <input type="tel" placeholder="请输入电话号码/手机号">
+</section>
+	
+<section class="box-2">
+	<h2>邮箱地址</h2>
+    <input  type="email" placeholder="请输入公司地址">
+</section>
+	
+<section class="box-2">
+	<h2>公司规模</h2>
+   <span>
+   		 <div class="right">
+               <div class="mask"></div>
+               <div id="divselecty">
+                   <small>请选择公司规模</small>
+                   <ul class="all">
+                       <li><a href="javascript:;">1-20人</a></li>
+                       <li><a href="javascript:;">20-99人</a></li>
+                       <li><a href="javascript:;"></a></li>
+                       <li><a href="javascript:;">100-499人</a></li>
+                       <li><a href="javascript:;">500-1000人</a></li>
+                       <li><a href="javascript:;">1000人以上</a></li>
+                   </ul>
+               </div>
+               <input name="" type="hidden" value="" id="inputselect"/>
+           </div>
+   </span>
+    
+</section>
+	
+<section class="box-2">
+	<h2>公司网址</h2>
+    <input type="text" placeholder="请输入公司网址">
+</section>
+	
+<section class="box-brief">
+	<h2>公司简介</h2>
+    <textarea type="text" placeholder="请输入公司简介"></textarea>
+</section>
+
+<section class="box-2">
+    <div class="select">
+    	<input class="file" type="file" name="pic-id" id="file" accept="image/x-png,image/jpg"></div>
+	<h2>企业认证</h2>
+    <span>上传企业营业执照</span>
+</section>
+
+<footer>
+	<div class="save-bot">
+    	
+        <span>保存信息</span>
+    </div>
+</footer>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="js/iscroll-zoom.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/jquery.photoClip.js"></script>
+
+
+<script type="text/javascript">
+    $(function(){
+        jQuery.divselect = function(divselectid,inputselectid) {
+            var inputselect = $(inputselectid);
+            $(divselectid+" small").click(function(){
+                $("#divselect ul").toggle();
+                $(".mask").show();
+            });
+            $(divselectid+" ul li a").click(function(){
+                var txt = $(this).text();
+                $(divselectid+" small").html(txt);
+                var value = $(this).attr("selectid");
+                inputselect.val(value);
+                $(divselectid+" ul").hide();
+                $(".mask").hide();
+                $("#divselect small").css("color","#333")
+            });
+        };
+        $.divselect("#divselect","#inputselect");
+    });
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        jQuery.divselecty = function(divselectyid,inputselectyid) {
+            var inputselecty = $(inputselectyid);
+            $(divselectyid+" small").click(function(){
+                $("#divselecty ul").toggle();
+                $(".mask").show();
+            });
+            $(divselectyid+" ul li a").click(function(){
+                var txt = $(this).text();
+                $(divselectyid+" small").html(txt);
+                var value = $(this).attr("selectyid");
+                inputselecty.val(value);
+                $(divselectyid+" ul").hide();
+                $(".mask").hide();
+                $("#divselecty small").css("color","#333")
+            });
+        };
+        $.divselecty("#divselecty","#inputselecty");
+    });
+</script>
+</body>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

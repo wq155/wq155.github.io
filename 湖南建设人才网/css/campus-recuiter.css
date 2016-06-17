@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*campus-recuiter */
+     #campus-recuiter{background:linear-gradient(to top,#20568c,#27507a);filter: progid:DXImageTransform.Microsoft.gradient(GradientType =0, startColorstr = #20568c, endColorstr = #27507a);}
+	.banner img{ margin:0 auto;width: 100%;;min-width: 1200px; }
+	.banner{width: 100%; border-bottom:#b1b1b1 solid 2px; margin-bottom:10px;}
+	.item{ padding:12px 0px;float:left;}
+	.item .right-none{margin-right:0; }
+	.item-box{ float:left; cursor:pointer;padding:10px;float:left; padding-top:10px; background-color:#f3f3f3; margin-right:20px; margin-top:10px;}
+    .item-box p{ text-align:center; font-size:14px; line-height:30px; color:#777777;}
+	.item-box p:hover{color:#EE8F3D;}
+	.list-box{ float:left; background-color:#f5fcff; width:196px; height:735px; margin-top:-2px; border:#459df5 2px solid;}
+	.list-box div{ width:180px; margin:0 auto; border-bottom:#e0f0ff 2px solid; line-height:54px; text-align:center;}
+	.content-list-item{ border-bottom:#F1F1F1 2px solid; float:left; width:706px;}
+	.content-list-item .item1{ width:332px; height:50px; padding:20px 0; float:left;  }
+	.item1 h2{ font-size:14px; height:25px;}
+	.item1 span{ font-size:14px; color:#505050;height:25px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+	.details-bot{ float:right; cursor:pointer; font-size:14px; width:100px; height:32px; background-color:white; 
+					border:#459DF5 2px solid; border-radius:8px; color:#459DF5; margin-top:6px;}
+    .job-list{ width:706px;}
+	.item2{ margin-left:30px;}
+	.asid-column{ width:276px; border:2px #459df5 solid; float:right; margin-top:12px; margin-bottom:8px; clear:both;}
+	.top-title{ height:36px; border-bottom:2px #459df5 solid; padding-left:10px;position:relative;}
+	.asid-column h2{ color:#459df5; font-size:16px; line-height:36px; font-weight:bold;}
+	.top-title .more{ background:url(images/more-2.png) no-repeat center; width:61px; height:36px; position:absolute; right:0; top:0;}
+	.content-lists{ padding:12px;}
+	.content-lists p{ line-height:26px; font-size:14px;}
+	.asid-essay{ margin-top:14px; }
+	.essay-list{ padding:12px; overflow:hidden; width:700px;}
+	.essay-items{ float:left; width:310px; font-size:14px; line-height:26px;}
+	.essay-items2{ float:right; width:310px; font-size:14px; line-height:26px;}
+	.aside{position: fixed;bottom: 35px;right: 40px;z-index: 999; display:none;}
+	.aside div{ width:70px; height:70px; margin:20px; border-radius:12px;}
+	.qq{background:url(../images/aside.png) no-repeat;}
+	.wechat{background:url(../images/aside.png) no-repeat; background-position:0px -84px;}
+	.share{background:url(../images/aside.png) no-repeat; background-position:0 -166px;}
+	.to-top{background:url(../images/aside.png) no-repeat; background-position:0 -246px;}
+	.qq:hover{background: url(../images/aside-1.png)}
+	.wechat:hover{background:url(../images/aside-1.png) no-repeat;background-position:0px -84px;}
+	.share:hover{background:url(../images/aside-1.png) no-repeat; background-position:0 -166px;}
+	.to-top:hover{background:url(../images/aside-1.png) no-repeat; background-position:0 -246px;}

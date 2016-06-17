@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>求职中心</title>
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<link rel='icon' href="images/pic.png" type=‘image/x-ico’ /> 
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" href="css/pagination.css">
+<link rel="stylesheet" href="css/career-center.css">
+</head>
+
+<body>
+<div class="header">
+ 	<div class="top-bar">
+        <div class="top-bar-box">
+           
+            <div class="top-nav right">
+                <a href="#">收藏本站</a>
+                <a href="#">企业/个人中心<span class="drop-down"> </span></a>
+                <span>个人/企业<a href="#"><mark>登陆</mark></a> |<a href="#" class="last"><mark > 注册</mark></a></span>
+            </div>       
+            <span class="left">欢迎来到建设人才网</span><br>
+        </div>
+    </div>
+    <div class="header-box">
+      	 <div class="propaganda-box right">
+         	<img src="images/propaganda-word.png" alt="为您找到梦想中的职位">
+         </div>
+         <div class="logo-box left">
+        	<a href="index.html"><img src="images/logo.png" alt="湖南建设人才网"></a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav-box">
+        <ul>
+            <a href="index.html"><li>首 页 </li></a>
+            <a href="career-center.html"><li id="career-center">求职中心</li></a>
+            <a href="telent-centent.html"><li>人才中心</li></a>
+            <a href="industry-news.html"><li>行业资讯</li></a>
+            <a href="campus-recuiter.html"><li>校园招聘</li></a>
+            <a href="user-center.html"><li>用户中心</li></a>
+            <a href="about-us.html"><li>关于我们</li></a>
+        </ul>
+    </div>
+ </div>
+ <div class="container">
+ 	<div class="job-search">  
+    	<div class="search-box">
+            <dl class="select-place">
+                <dt id="place-name">选择地点 <span class="angle-down"></span></dt>
+                <dd>长沙</dd>
+                <dd>上海</dd>
+                <dd>北京</dd>
+                <dd>深圳</dd>
+                <dd>广州</dd>
+                <dd>全国</dd>
+               
+            </dl>
+        	<input class="keywords"  type="text" placeholder="请输入职位名称">
+            <input type="button" value="搜 索" class="search-bot">
+            <div class="search-hot">
+            	<span class="left">热门搜索: </span>
+                <p><a href="#">建筑工程师</a> |<a href="#">建造师</a> |  <a href="#">建筑设计</a> |  <a href="#">安全员</a> |  <a href="#">项目经理</a> |  <a href="#">施工员</a></p>
+                <span class="right advanced-search"><mark>高级搜索&gt;&gt;</mark></span>
+              
+            </div>
+        </div>
+       
+    	<div class="select-box">
+        	<div class="select-item-box">
+        	 <span>行业类别：</span>
+            <ul class="select-item" id="item1">
+            	<li>全部</li>                                       
+                <li>勘察/设计类</li>
+                <li>装饰/装修类</li>
+                <li>工程施工类</li>
+                <li>房地产/物业类</li>
+                <li>工程监理类</li>
+                <li>造价预算招投标</li>
+                <li>经营管理类</li>
+                <li>综合/其他类</li>
+            </ul>
+            </div>
+            <div class="select-item-box">
+        	 <span>薪资待遇：</span>
+            <ul class="select-item" id="item2">
+               
+            	<li>面议</li>                                       
+                <li>3k/月以下</li>
+                <li>3-5K/月</li>
+                <li>5-8K/月</li>
+                <li> 8-12K/月</li>
+                <li>12-15K/月</li>
+                <li>15-20K/月</li>
+                <li>20K以上</li>
+            </ul>
+            </div>                                   
+            <div class="select-item-box">
+        	 <span>学历要求：</span>
+            <ul class="select-item" id="item3">     	                                         
+            	<li>不限</li>                                       
+                <li>大专以下</li>
+                <li>大专</li>
+                <li>本科</li>
+                <li>硕士</li>
+                <li>博士</li>
+                <li>博士以上</li>
+            </ul>
+            </div>
+            <div class="select-item-box">
+        	 <span>工作经验：</span>
+            <ul class="select-item" id="item4">      	   	           	    		      
+            	<li>不限</li>                                       
+                <li>应届生</li>
+                <li>一年以上</li>
+                <li>三年以上</li>
+                <li>五年以上</li>
+                <li>八年以上</li>
+                <li>十年以上</li>
+            </ul>
+            </div>
+            <div class="select-item-box">
+        	 <span>发布时间：</span>
+            <ul class="select-item" id="item5">
+                           	   	    	   
+            	<li>不限</li>                                       
+                <li>近一天</li>
+                <li>三天内</li>
+                <li>一周内</li>
+                <li>一个月内</li>
+                <li>三个月内</li>
+            </ul>
+            </div>
+            <div class="select-item-box">
+        	 <span>公司规模：</span>
+            <ul class="select-item" id="item6">
+                                                           
+            	<li>不限</li>                                       
+                <li>50人以下</li>
+                <li>50-100人</li>
+                <li>100-500人</li>
+                <li>500-1000人</li>
+                <li>1000-10000人</li>
+                <li>10000人以上</li>
+            </ul>
+            </div>
+            <div class="select-item-box">
+        	 <span>职位类型：</span>
+            <ul class="select-item" id="item7">                  
+            	<li>不限</li>                                       
+                <li>全职</li>
+                <li>兼职</li>
+                <li>实习</li>
+            </ul>
+            </div>
+            <div class="select-prompt">
+            <span class="right">共 4654 条招聘结果</span>
+            <span class="left">已选条件：</span>
+            <ul class="select-item">                  
+            	<li class="null">无</li>
+
+                <span></span> 
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  
+                <li class="all-cal">取消全部</li>                                  
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+   		    <span class="site">您的位置： <a href="index.html">首页</a>&gt;求职中心</span>
+    	<div class="column-name">默认排序</div>
+        <div class="column-name">相关度</div>
+        <div class="column-name">首发日</div>
+        <div class="line"></div>
+        <div class="job-list-box">
+        	<div class="job-list-item">
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+            <div class="job-list-item">
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+             <div class="job-list-item">	
+                <input type="button" value="立即申请">
+                <input type="button" value="收藏职位">
+                <a href="career-details.html"><h1>软装饰设计师</h1></a>
+                <div class="infor">
+                	<span>上海钰景园林工程有限公司</span>
+                    <span>工作地点：上海</span>
+                    <span>薪资待遇：10K/月</span>
+                    <span>学历要求：本科及以上</span>
+                    <span>工作经验：3年以上</span>                
+                </div>
+            </div>
+        </div>
+         <div class="pages">
+        <div id="Pagination"></div>
+        <div class="searchPage">
+          <span class="page-sum">共<strong class="allPage">15</strong>页</span>
+          <span class="page-go">跳转<input type="text">页</span>
+          <a href="javascript:;" class="page-btn">GO</a>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="footer">
+ 	<div class="footer-box">
+    	<dl class="colleges">
+        	<dt>合作高校</dt>
+            <dd>长沙理工大学</dd>
+            <dd>中南大学</dd>
+            <dd>山东建筑大学</dd>
+            <dd>湖南城市学院</dd>
+            <dd>兰州交通大学</dd>
+            <dd>天津大学</dd>
+        </dl>
+        <dl class="colleges">
+        	<dt>关于我们</dt>
+            <dd>联系我们</dd>
+            <dd>网站导航</dd>
+            <dd>企业文化</dd>
+            <dd>帮助中心</dd>
+            <dd>网站介绍</dd>
+            
+        </dl>
+        <dl class="colleges">
+        	<dt>个人服务</dt>
+            <dd>我要注册</dd>
+            <dd>新手上路</dd>
+            <dd>搜索职位</dd>
+            <dd>个人帮助</dd>
+            <dd>安全中心</dd>
+            
+        </dl>
+        <dl class="colleges">
+        	<dt>企业服务</dt>
+            <dd>注册企业会员</dd>
+            <dd>网络招聘</dd>
+            <dd>校园招聘</dd>
+            <dd>猎头服务</dd>
+            <dd>招聘流程外包</dd>
+            <dd>企业帮助</dd>
+        </dl>
+   
+    <div class="attention-us right">
+    	<img src="images/two-dimension-cord.png">
+        <span>关注我们</span>
+    </div>
+    <div class="tel right">服务热线： <span> 88950525</span></div> 
+    <p>
+ 版权所有：湖南省建设人网 湘ICP备05017929号-4<br>
+地址：长沙市雨花区洞井街道和平社区高升路268号和馨佳园（湖南省住房和城乡建设厅办公楼隔壁）5栋201、202室 邮编：410116<br>
+联系电话：88950525（信息中心）
+    </p>
+ </div>
+ </div>
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#Pagination").pagination("15");
+});
+    </script>
+ <script type="text/javascript" src="js/search.js"> </script>    
+
+</body>
+</html>

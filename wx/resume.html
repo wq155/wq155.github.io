@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+    </head>
+<style>
+*{ font-family:"微软雅黑";}
+h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+img{display:inline-block;}
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	.collect{background:url(images/collect.png) no-repeat center; width:34px; height:88px; float:right; margin-right:3%;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	
+	.personal-infor{ width:25%; height:38px; font-size:20px; color:#f1f1f1; text-align:center; line-height:38px; background-color:#23a4ff;
+	                 margin-top:10px; margin-left:10px; border-radius:10px;}
+	.infor-box{background-color:#f2f2f2; border-radius:10px; margin-top:6px;border:#DDDDDD solid 1px; padding:15px 0;}
+	.img-box{width:22%; height:98px; text-align:center; float:left;}
+	.img-box img{border-radius:50%; } 
+	.information{ margin-left:23%; padding-right:20px; padding-top:8px;}
+	.information .top{width:45%;}
+	.information li{float:left; width:28%;;padding-right:20px; font-size:20px; color:#656565; }
+	.information h2{ display:inline-block; font-size:24px;}
+	.information ul{height:30px; margin-top:8px;}
+	.information .top-3,.information .bot-3{padding-right:0px; float:right; text-align:right;}
+	.information .mid{text-align:center; width:26%;}
+	
+	.personal-intent{ width:25%; height:38px; font-size:20px; color:#f1f1f1; text-align:center; line-height:38px; background-color:#23a4ff;
+	                 margin-top:10px; margin-left:10px; border-radius:10px;}
+    .intent .first-1{width:56%;}
+	.infor-box .intent{ padding-left:20px; padding-top:0px; margin:0; width:100%; font-size:20px;color:#656565;}
+	.intent .last-3{ width:20%;padding:0px; float:right; text-align:right;} 
+	.intent .first-3{width:100%;}
+	.intent .down-3{width:28%}
+	.intent .first-2{width:72%;}
+	.intent .mid{ width:24%;color:#656565;}
+	
+	.intent .compny{width:100%; color:#323232;}
+	.intent .last-2{ width:50%;padding:0px; float:right; text-align:right;}
+	.intent .first-mid{width:50%;}
+	.intent .first-lat{ width:100%; padding:0; }
+	.intent .middle{margin:0; padding:0; width:80px;}
+	
+	.intent .major{width:38.5%;}
+	.intent .middle{width:11.5%}
+	
+	footer{width:100%; max-width:640px; min-width:320px; height:80px; background:linear-gradient(to top, #1385d5, #5dbcff); margin-top:10px;}
+	.botton{ display:block;line-height:80px; color:white; font-size:24px; padding-left:10%; 
+	        background:url(images/contact.png) no-repeat left; width:35%; margin-left:auto; margin-right:auto;}
+			
+	@media only screen and (max-width:420px) and (min-width:320px){
+		header{height:60px}
+		.back{background-size:60%;height:60px}
+		.collect{background-size:60%;height:60px}
+		header h1{font-size:20px; line-height:60px;}
+		
+		.personal-infor{width:26%; height:25px; font-size:14px; line-height:25px; border-radius:6px; margin-top:8px; margin-left:8px;}
+		.infor-box{margin-top:3px; padding:10px 0; border-radius:6px; }
+		.img-box{width:22%; height:60px; float:left;}
+		.img-box img{width:60px}
+		.information{ padding-top:6px;  padding-right:12px;}
+		.information li{width:10%; font-size:12px; margin-right:0px;}
+		.information h2{ font-size:16px;}
+		.information .top{width:40%; margin-right:0; padding:0}
+		.information .mid{padding:0; width:20%}
+		.information .top-3,.information .bot-3{ padding:0; margin:0; width:25%}
+		.information ul{height:20px; margin-top:5px;}
+		
+		.personal-intent{width:26%; height:25px; font-size:14px; line-height:25px; border-radius:6px; margin-top:8px; margin-left:8px;}
+		.information .first-1{width:58%; }
+		.infor-box .intent{padding:0 12px; font-size:12px;}
+		.intent .mid{width:15%; padding:0; margin:0;color:#656565;}
+		.intent .last-3{width:25%}
+		.intent .first-2{width:62%}
+		
+		.intent .first-mid{width:49%;}
+		.intent .last-2{width:50%;}
+		.intent .middle{width:10%}
+		.intent .major{width:38%}
+		
+		footer{height:58px;}
+		.botton{font-size:16px; background-size:16%; line-height:58px; padding-left:10%; width:40%}
+
+		
+	}
+</style>
+<body>
+<header class="clearfix">   
+     <div class="collect"></div>             
+    <a href="resume-center.html"> <div class="back"></div> </a>   
+     <h1>个人简历</h1>          
+</header>	   
+
+<section>
+    <div class="personal-infor">个人信息</div>
+    <div class="infor-box  clearfix">
+    	<div class="img-box"><img src="images/img.png"></div>
+        <div class="information">
+        	<ul>
+            	<li class="top"><h2>张某某</h2>&nbsp;27岁</li>
+                <li class="mid">本科</li>
+                <li class="top-3">英语六级</li>
+            </ul>
+            <ul>
+            	<li class="top">湖南长沙</li>
+                <li class="mid">未婚</li>
+                <li class="bot-3">3年经验</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="personal-intent">求职意向</div>
+    <div class="infor-box  clearfix">
+    	
+        <div class="information intent">
+        	<ul>
+            	<li class="first-1">期望职位：<h2>建筑工程师</h2> </li>
+                <li class="mid">￥6-8k </li>
+                <li class="last-3">全职</li>
+            </ul>
+            <ul>
+            	<li class="first-2">期望工作地点：上海、北京</li>                
+                <li class="last-3 down-3">可随时到岗</li>
+            </ul>
+            <ul>
+            	<li class="first-3">期望行业：建筑与工程 / 房地产开发</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="personal-intent">我的优势</div>
+    <div class="infor-box  clearfix">
+     	<div class="information intent">
+    	熟悉建筑工程现场管理，熟悉各类建筑工程施工工艺和技术标准，
+        对房地产工程项目管理有深刻了解和一定认识，有较强的计划管理和组织协调能力，
+        对现场施工有良好的控制把握，善于组建良好的工程管理团队，
+        对现场工程问题和突发事件能灵活妥善处理，责任心强，积极上进，
+        强烈的事业心熟练电脑办公，持C1驾照。
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="personal-intent">工作经历</div>
+    <div class="infor-box  clearfix">
+    	
+        <div class="information intent">
+        	<ul>
+            	<li class="compny">汕头市建安（集团）公司</li>
+               
+            </ul>
+            <ul>
+            	<li class="first-mid">担任职位：土建工程师 </li>                
+                <li class="last-2">2014年3月 - 2015年2月</li>
+            </ul>
+            <ul>
+            	<li class="first-lat">工作职责：<br>
+                      负责新浦江镇商业项目土建工程师一职，负责与设计及技术部图纸跟进，
+                      审核指定分包技术标，参与部分工程对外手续办理事宜施工队伍管理及协调。
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="personal-intent">教育经历</div>
+    <div class="infor-box  clearfix">
+    	
+        <div class="information intent"> 
+            <ul>
+            	<li class="first-3">华东交大土木建筑学院 </li>
+            </ul>
+        	<ul>
+            	<li class="first-1 major">土木工程专业</li>
+                <li class="middle">本科 </li>
+                <li class="last-2">2007/09—2012/07</li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</section>
+
+<footer>
+	   <div class="botton">立即预约面试</div>
+</footer>
+
+</body>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

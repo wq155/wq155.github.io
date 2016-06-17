@@ -1,0 +1,127 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[ssssif gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+	<style>
+	h1,h2,h3,h4{margin:0; padding:0;}
+	*{ font-size:62.5%;font-family:"微软雅黑"; letter-spacing:.02rem; word-spacing:0px;}
+	a{color:black;}
+	input{border:none 0;}
+		
+	header{background-color:#23a4ff; width:100%; max-width:640px; min-width:320px; height:88px;}
+	.back{background:url(images/back.png) no-repeat center; width:19px; height:88px; float:left; margin-left:3%;}
+	.save{background:url(images/images/save.png) no-repeat center; width:28px; height:88px; float:right; margin-right:3%;}
+	header h1{font-size:28px; display:block;color:white; text-align:center; line-height:88px;}
+	
+	.img-box{width:100%; height:152px;; text-align:center; margin-top:30px;}
+	.img-box img{border-radius:50%;}
+	article h2{text-align:center; font-size:2.8rem; line-height:28px; }
+	article p{text-align:center; font-size:2rem; line-height:40px;color:#656565;}
+	.edit{padding-left:2.2rem; margin-left:2rem; color:#000000; font-size:2rem;   background:url(images/edit.png) no-repeat left; background-size:2rem}
+	.jl-bot{ text-align:center;}
+	.jl-bot span{ display:inline-block; width:30%; font-size:2rem; line-height:50px; border:#23a4ff solid 2px; margin:0 1rem; border-radius:10px;}
+	.jl-inf{ padding:0 2rem;}
+	.jl-inf span{font-size:2rem; line-height:40px; color:#646464}
+	.date{float:right;}
+	
+	.box-2{padding:3% 3%;border-bottom:#e9e9e9 solid 2px; }
+	.box-2 h2{float:left;font-size:2rem; line-height:40px;   padding-right:4%; background:url(images/images/line-between.png) no-repeat right;}
+	.box-2 span{color:#aca9a9; line-height:40px; padding-left:4%;font-size:1.6rem;}
+	.select{background:url(images/more-1.png) no-repeat center; width:2rem; height:40px; float:right; position:relative;}
+	.first-Line{border-top:#e9e9e9 solid 2px; }
+	
+	@media only screen and (max-width:420px) and (min-width:320px){
+		header{height:60px;}
+		.back{height:60px; background-size:80%}	
+		.save{height:60px; background-size:80%}
+		header h1{font-size:22px; line-height:60px;}
+		
+		.img-box{height:100px; margin-top:18px;}
+		.img-box img{ height:100px;}
+		article h2{ font-size:2.4rem;}
+		article p{ font-size:1.8rem; line-height:30px}
+		.edit{ margin-left:14px; padding-left:20px;font-size:1.6rem; background-size:1.7rem;  }
+		.jl-bot span{ width:35%; line-height:35px; font-size:18px}
+		.jl-inf{ padding:0 1.2rem}
+		.jl-inf span{ font-size:16px}
+		
+		.box-2 h2{font-size:18px; background-size:3% 80%; line-height:30px;}
+		.box-2 span{line-height:30px; font-size:16px}
+		.select{height:30px; background-size:60%}
+	}
+	</style>
+<body>
+<header class="clearfix">   
+     <div class="save"></div>             
+     <a href=""> <div class="back"></div> </a>   
+     <h1>简历中心</h1>          
+</header>	 
+<section>
+	 <div class="img-box"><a href="personal-information.html"><img src="images/persenal-logo.png"></a></div><br>
+     <article>
+     	<h2>张某某</h2>
+        <p>3年工作经验|湖南长沙   <a href="personal-information.html"><span class="edit">编辑</span></p></a>
+        <div class="jl-bot">
+        	<a href="resume.html"><span>简历预览</span>
+            <a href="resume-center.html"><span>简历刷新</span></a>
+        </div>
+     </article>
+     <div class="jl-inf">
+     	<span> 简历完整度：20%</span><span class="date">2016-3-10</span>
+           <div class="progress">
+  				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+   			    <span class="sr-only">20% Complete</span>
+           </div>
+        </div>       
+     </div>
+</section>  
+
+<section class="box-2 first-Line">
+<a href="photo-album.html"> <div class="select"></div>
+	<h2>个人相册</h2>
+    <span>请增添个人照片</span></a>
+</section>
+<section class="box-2">
+    <a href="job-intension.html"><div class="select"></div>
+	<h2>求职意向</h2>
+    <span>请填写求职意向</span></a>
+</section>
+<section class="box-2">
+   <a href="job-experience-list.html"> <div class="select"></div>
+	<h2>工作经历</h2>
+    <span>请填写工作经历</span></a>
+</section>
+<section class="box-2">
+   <a href="education-list.html"> <div class="select"></div>
+	<h2>教育经历</h2>
+    <span>请填写教育经历</span></a>
+</section>
+
+</body>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common_wx.css">
+    </head>
+<style>
+/*top*/
+a img{border:none}
+.header{background-color:#fdb752; margin:0 auto; width:100%; max-width:640px; min-width:320px; height:56px;overflow:hidden}
+.header img{margin-left:12px;   float:left; width:6%}
+.header h1{float:left; margin-left:9px; margin-top:16px; font-size:24px; font-weight:bold;}
+
+.keyword{float:right; margin-top:14px;  height:30PX; width:136PX; border:#B9B9B9 1PX solid}
+/*list*/
+.list-Box{background-color:#f2f2f2; width:100%; max-width:640px; min-width:320px; padding-bottom:3%}
+.image-Box{ margin-top:6px; float:left; margin-left:12px; margin-top:20px; width:18%;}
+.image-Box img{-webkit-box-raduis:3px;-moz-box-raduis:3px;border-radius:3px;width:90%}
+.content{  padding-top:4%; display:block; }
+.content h4{ font-size:18px; font-family:"微软雅黑"; color:#066198;float:left; margin:0; padding:0; overflow:hidden }
+.content span{ font-size:16px;font-family:"微软雅黑"; color:#646464; }
+.content .salary{color:#FE8916; line-height:20px; margin-left:1%;}
+.date{margin-top:0px; margin-right:12px;line-height:20px;float:right;}
+.content .company{font-size:16px; color:#323232; float:left; margin-top:1%; float:right; margin-right:12px;}
+.woke-type{margin-left:10%; padding-left:18px; background:url(images/003.png) no-repeat left; }
+.submit{width:45px; height:28px; float:right; margin-top:15px; margin-right:14px; background-color:#fe8916; border:0px; background:url(images/00002.png) no-repeat center;
+ background-size:22px; box-shadow:0px 0 0px #954a00, 0 1px 1px #954a00, 1px 0 1px #954a00, 0 -1px 1px #CCCCCC;}
+.number{ float:right;margin-right:12px; padding-left:18px;background:url(images/number.gif) no-repeat left;  background-size:18PX;}
+
+.content .work-EX{float:left;padding-left:16px;background:url(images/work-EX.gif) no-repeat left ;  background-size:14PX; }
+.education{margin-left:7%;padding-left:24px;background:url(images/education.gif) no-repeat left; background-size:20PX;}
+.list-Box1{background-color:#f2f2f2; width:100%; max-width:640px; min-width:320px; height:100%; margin-top:6px;padding-bottom:3%}
+.clear{clear:right}
+.photo img{width:20px; }
+.address{ padding-left:16px;background:url(images/location_02.png) no-repeat left; background-size:14PX; margin-top:1%; float:left; }
+.photo{ padding-top:2%;}
+.header .logo{ width:40px; margin-top:0px; margin-left:12px; }
+@media only screen and (max-width:423px){
+    .keyword{display:none;}
+    .header h1{font-size:20px; margin-top:16PX; }
+    .header .logo{ width:30px; margin-top:0px; margin-left:12px; }
+    .woke-type{display:none;}
+	.image-Box{margin-top:5%}
+	.content h4{font-size:18px;}
+	.content span{font-size:14px;}
+	.content .company{font-size:14px;}
+	.education{margin-right:50px;}
+	.header .submit{width:30px; height:30px;border-radius:50%; }
+	.submit{box-shadow:none; border:#fe8916 solid 1px; background-color:#fdb752; background-size:18px; }
+	.address{background-size:31%}
+    } 
+
+</style>
+<body>
+<!--top-->
+<div class="header" >
+	<img src="images/logo.gif" class="logo">
+	<h1>建筑行业人才</h1>
+	<input type="button" class="submit">
+	<input class="keyword">
+</div>
+<!--list-->
+<div class="list-Box clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+    
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+     
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+     
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+    
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+    
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+    
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+<div class="list-Box1 clearfix">
+    <a class="image-Box" href="job-details.html">
+        <img src="images/images/01.gif">
+    </a>
+    <a class="content clearfix" href="job-details.html">
+        <div class="clear">
+            <span class="date">2016/3/6</span> 
+    
+            <h4>建筑工程师</h4>
+            <span class="salary clear">3-5K</span>          
+        </div>
+        <div class="clear">
+            <span class="address"> 长沙</span>
+            <span class="company">上海三越软件科技有限公司</span>
+        </div>
+        
+        <div class="photo clear">            
+            <span class="number"> 1人</span>
+            <span class="education"> 本科</span>
+            <span class="woke-type"> 全职</span>
+            <span class=" work-EX"> 1-3年</span>       
+        </div>
+    </a>
+</div>
+
+
+
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>		
+</body>
+</html>
+
+
+
