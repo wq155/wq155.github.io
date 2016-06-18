@@ -228,6 +228,18 @@ footer{
 @media (max-width:768px){
 	
 }
-@media (max-width:768px){
-	
+@media (max-width:480px){
+	.personal{
+	overflow: hidden;
+	margin: 0;;
+	height: 64rem;
+	float: left;
+	background: #606060;
+}
+.media-body p{
+    display: none;	
+}
+.media-body h4{
+	float: left;
+}
 }
